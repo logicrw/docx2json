@@ -90,8 +90,10 @@ def sha256_of_file(path: str) -> str:
 # --------- normalization helpers ----------
 def normalize_credit(text: str) -> str:
     if not text: return ""
-    text = re.sub(r'^\s*(来源|Source)\s*[:：]\s*', '', text, flags=re.I)
-    text = text.strip().strip('。．. ')
+    # Remove 来源:/Source: (both half-width and full-width colons)
+    text = re.sub(r'^\s*(来源|Source)\s*[：:]\s*', '', text, flags=re.I)
+    # Remove leading/trailing spaces and ending punctuation
+    text = text.strip().rstrip('.,;，。；')
     return text
 
 # caption/title heuristics and doc title/date detection
@@ -264,10 +266,10 @@ def convert(pandoc_ast: Dict[str,Any], source_file: str, style_map_path: Optiona
                         # count only paragraph kinds
                         pass
                     k -= 1
-            # 3) Group meta for multi-image paragraphs
-            if group_len > 1:
-                group_id = f"grp_{group_counter:03d}"
-                group_counter += 1
+            # 3) Generate group metadata for ALL images (single or multiple)
+            group_id = f"grp_{group_counter:04d}"
+            group_counter += 1
+            
             for idx_img, img in enumerate(images):
                 src = img['src']
                 asset_id = None
@@ -282,11 +284,12 @@ def convert(pandoc_ast: Dict[str,Any], source_file: str, style_map_path: Optiona
                     "title": None,
                     "credit": None
                 }
-                # Assign group meta and absorb title/credit per rules
-                if group_id:
-                    figure["group_id"] = group_id
-                    figure["group_seq"] = idx_img + 1
-                    figure["group_len"] = group_len
+                # Always assign group metadata (for consistent plugin logic)
+                figure["group_id"] = group_id
+                figure["group_seq"] = idx_img + 1
+                figure["group_len"] = group_len
+                
+                # Assign title to group head and credit to group tail
                 if title_text and idx_img == 0:
                     figure["title"] = title_text
                 if credit_text and idx_img == group_len - 1:

@@ -18,7 +18,10 @@
         "alt": null
       },
       "title": "当前市场情绪",
-      "credit": "FT, Reddit"
+      "credit": "FT, Reddit",
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -31,7 +34,10 @@
         "alt": null
       },
       "title": "通胀指标难以软化至2%目标以下",
-      "credit": null
+      "credit": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -44,7 +50,10 @@
         "alt": null
       },
       "title": "密西根大学通胀预期：短期与长期指标均意外上行",
-      "credit": "Bloomberg"
+      "credit": "Bloomberg",
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "figure",
@@ -53,7 +62,10 @@
         "alt": null
       },
       "title": "财长贝森特近期宣称“中性”利率应低约150个基点",
-      "credit": "Forbes, CNBC"
+      "credit": "Forbes, CNBC",
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -66,7 +78,10 @@
         "alt": null
       },
       "title": "强劲PPI后，市场仅定价9月会议降息一次（25基点）的可能性低于90%",
-      "credit": "Citi"
+      "credit": "Citi",
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -79,7 +94,10 @@
         "alt": null
       },
       "title": "过去一周政府的SBR相关头条令市场失望",
-      "credit": "Yahoo Finance, Arkham"
+      "credit": "Yahoo Finance, Arkham",
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "figure",
@@ -88,7 +106,10 @@
         "alt": null
       },
       "title": null,
-      "credit": null
+      "credit": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -101,7 +122,10 @@
         "alt": null
       },
       "title": "BTC & ETH ETF 上周资金流入创纪录",
-      "credit": "Bloomberg, X"
+      "credit": "Bloomberg, X",
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "figure",
@@ -110,7 +134,10 @@
         "alt": null
       },
       "title": "主要由ETH流入激增170亿美元推动",
-      "credit": null
+      "credit": null,
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
@@ -131,7 +158,10 @@
         "alt": null
       },
       "title": "基金经理现金水准降至周期低点",
-      "credit": "DB"
+      "credit": "DB",
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 1
     },
     {
       "type": "paragraph",
