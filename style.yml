@@ -1,0 +1,7 @@
+# Minimal style map (optional). Keys are Word style names; values are semantic types.
+styles:
+  "Heading 1": h1
+  "Heading 2": h2
+  "SP-Caption": figure_caption   # custom style your team can assign to image titles/captions
+  "SP-Source": credit            # custom style for image/data source lines
+  "Quote": pullquote             # optional: pull quote paragraphs
