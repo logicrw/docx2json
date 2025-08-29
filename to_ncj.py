@@ -6,31 +6,11 @@ Normalized Content JSON (NCJ) tailored for downstream layout engines.
 
 Usage:
   pandoc input.docx -t json --extract-media=assets \
-  | python to_ncj.py --source "input.docx" --style-map style.yml > content.json
+  | python to_ncj.py --source "input.docx" > content.json
 """
 import sys, json, re, os, hashlib
 from typing import List, Dict, Any, Tuple, Optional
 
-# --------- tiny YAML-ish parser for a simple style map ----------
-def load_style_map(path: Optional[str]) -> Dict[str,str]:
-    if not path: return {}
-    if not os.path.exists(path): return {}
-    mapping = {}
-    in_styles = False
-    with open(path, 'r', encoding='utf-8') as f:
-        for raw in f:
-            line = raw.strip()
-            if not line or line.startswith('#'): continue
-            if line.startswith('styles:'):
-                in_styles = True
-                continue
-            if in_styles:
-                m = re.match(r'^("?)(.+?)\1\s*:\s*([A-Za-z0-9_\-]+)$', line)
-                if m:
-                    key = m.group(2)
-                    val = m.group(3)
-                    mapping[key] = val
-    return mapping
 
 # --------- helpers ----------
 def stringify_inlines(inlines: List[Any]) -> str:
@@ -109,10 +89,9 @@ def parse_date_from_yyMMdd(yyMMdd: str) -> Optional[str]:
         return None
 
 # --------- main conversion ----------
-def convert(pandoc_ast: Dict[str,Any], source_file: str, style_map_path: Optional[str]) -> Dict[str,Any]:
+def convert(pandoc_ast: Dict[str,Any], source_file: str) -> Dict[str,Any]:
     blocks = pandoc_ast.get('blocks', [])
     meta = pandoc_ast.get('meta', {})
-    style_map = load_style_map(style_map_path)
 
     CAPTION_HINT = re.compile(r'^(图|Figure|Fig\.?|图表|Chart|Graph)\s*\d+[:：．. ]|^【图|^图：', re.I)
     CREDIT_HINT  = re.compile(r'^(来源|Source)[:：]', re.I)
@@ -305,7 +284,6 @@ def convert(pandoc_ast: Dict[str,Any], source_file: str, style_map_path: Optiona
             "version": "v1",
             "source_file": source_file
         },
-        "style_map": load_style_map(style_map_path),
         "blocks": out_blocks,
         "assets": list(assets.values()),
         "report": {"warnings": warnings}
@@ -316,10 +294,9 @@ def main():
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument('--source', default='unknown.docx')
-    ap.add_argument('--style-map', default=None)
     args = ap.parse_args()
     ast = json.loads(sys.stdin.read())
-    ncj = convert(ast, args.source, args.style_map)
+    ncj = convert(ast, args.source)
     json.dump(ncj, sys.stdout, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':

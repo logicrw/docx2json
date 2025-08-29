@@ -6,10 +6,6 @@
     "version": "v1",
     "source_file": "250818 - Summer Break.docx"
   },
-  "style_map": {
-    "Heading 1": "h1",
-    "Heading 2": "h2"
-  },
   "blocks": [
     {
       "type": "figure",
