@@ -362,7 +362,7 @@ def group_figures(figures: List[FigureCandidate], para_texts: List[str],
     return groups
 
 # --------- Phase 3: Assign Titles and Credits ----------
-def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str], config: Config):
+def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str], config: Config, doc_full_title: str = None):
     """Assign titles and credits to groups"""
     
     for group in groups:
@@ -378,7 +378,8 @@ def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str
             check_idx = first_fig.para_idx + offset
             if 0 <= check_idx < len(para_texts):
                 text = para_texts[check_idx]
-                if text and is_short_title(text, config.max_title_len):
+                # Skip document title (usually first paragraph)
+                if text and text != doc_full_title and is_short_title(text, config.max_title_len):
                     title = text
                     break
         
@@ -414,18 +415,20 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
     # Group figures
     groups = group_figures(figures, para_texts, page_width_emu, config)
     
-    # Assign titles and credits
-    assign_titles_and_credits(groups, para_texts, config)
-    
     # Extract document metadata
     doc_title = None
     doc_date = None
+    doc_full_title = None  # Store full title for skipping logic
     if para_texts:
         first_text = para_texts[0]
         match = DOC_TITLE_RE.match(first_text or '')
         if match:
-            doc_title = first_text.strip()
+            doc_full_title = first_text.strip()  # Full title for comparison
+            doc_title = match.group(2).strip()   # Clean title without date
             doc_date = parse_date_from_yyMMdd(match.group(1))
+    
+    # Assign titles and credits
+    assign_titles_and_credits(groups, para_texts, config, doc_full_title)
     
     # Build output blocks
     out_blocks = []
@@ -460,7 +463,7 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
     
     for para_idx, para_text in enumerate(para_texts):
         # Skip document title
-        if para_idx == 0 and doc_title and para_text == doc_title:
+        if para_idx == 0 and doc_full_title and para_text == doc_full_title:
             continue
             
         # Check if this paragraph starts a new group
@@ -483,7 +486,7 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
                 # Create figure block
                 figure_block = {
                     "type": "figure",
-                    "image": {"asset_id": asset_id, "alt": None},
+                    "image": {"asset_id": asset_id},
                     "title": group_starting_here.title if seq == 0 else None,  # Title on first figure
                     "credit": group_starting_here.credit if seq == group_len - 1 else None,  # Credit on last figure
                     "group_id": group_id,

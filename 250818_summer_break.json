@@ -1,6 +1,6 @@
 {
   "doc": {
-    "title": "250818 - Summer Break",
+    "title": "Summer Break",
     "date": "2025-08-18",
     "locale": "zh-CN",
     "version": "v1",
@@ -10,10 +10,9 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_76f7bfb095b6",
-        "alt": null
+        "asset_id": "img_76f7bfb095b6"
       },
-      "title": "250818 - Summer Break",
+      "title": null,
       "credit": null,
       "group_id": "grp_0001",
       "group_seq": 1,
@@ -23,8 +22,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_dbbbe31f43d5",
-        "alt": null
+        "asset_id": "img_dbbbe31f43d5"
       },
       "title": "当前市场情绪",
       "credit": null,
@@ -36,8 +34,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_0b2aa77c3510",
-        "alt": null
+        "asset_id": "img_0b2aa77c3510"
       },
       "title": null,
       "credit": "FT, Reddit",
@@ -53,8 +50,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_167b6884e197",
-        "alt": null
+        "asset_id": "img_167b6884e197"
       },
       "title": "通胀指标难以软化至2%目标以下",
       "credit": null,
@@ -70,8 +66,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_09aa1fc6253d",
-        "alt": null
+        "asset_id": "img_09aa1fc6253d"
       },
       "title": "密西根大学通胀预期：短期与长期指标均意外上行",
       "credit": "Bloomberg",
@@ -87,8 +82,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_b2b73f4d8b19",
-        "alt": null
+        "asset_id": "img_b2b73f4d8b19"
       },
       "title": "财长贝森特近期宣称“中性”利率应低约150个基点",
       "credit": "Forbes, CNBC",
@@ -108,8 +102,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_88ea3fc64567",
-        "alt": null
+        "asset_id": "img_88ea3fc64567"
       },
       "title": "强劲PPI后，市场仅定价9月会议降息一次（25基点）的可能性低于90%",
       "credit": "Citi",
@@ -129,8 +122,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_baecaaa2d010",
-        "alt": null
+        "asset_id": "img_baecaaa2d010"
       },
       "title": "过去一周政府的SBR相关头条令市场失望",
       "credit": null,
@@ -142,8 +134,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_78ec0ebdafd6",
-        "alt": null
+        "asset_id": "img_78ec0ebdafd6"
       },
       "title": null,
       "credit": "Yahoo Finance, Arkham",
@@ -163,8 +154,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_be731c0a03dc",
-        "alt": null
+        "asset_id": "img_be731c0a03dc"
       },
       "title": "BTC & ETH ETF 上周资金流入创纪录",
       "credit": "Bloomberg, X",
@@ -180,8 +170,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_ec6b56b9b1ef",
-        "alt": null
+        "asset_id": "img_ec6b56b9b1ef"
       },
       "title": "主要由ETH流入激增170亿美元推动",
       "credit": null,
@@ -201,8 +190,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_c103eaa00355",
-        "alt": null
+        "asset_id": "img_c103eaa00355"
       },
       "title": "美国消费者对股价的看涨程度 vs 自身收入前景达历史之最",
       "credit": null,
@@ -214,8 +202,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_833164888c66",
-        "alt": null
+        "asset_id": "img_833164888c66"
       },
       "title": null,
       "credit": "DB",
@@ -231,8 +218,7 @@
     {
       "type": "figure",
       "image": {
-        "asset_id": "img_95a9764054d1",
-        "alt": null
+        "asset_id": "img_95a9764054d1"
       },
       "title": "基金经理现金水准降至周期低点",
       "credit": null,
@@ -321,7 +307,7 @@
   "report": {
     "warnings": [],
     "debug": [
-      "grp_0001: single figure(para=1), title: '250818 - Summer Brea...', credit: None",
+      "grp_0001: single figure(para=1), title: None, credit: None",
       "grp_0002: row by same-paragraph(para=4, 2 images), title: '当前市场情绪...', credit: 'FT, Reddit...'",
       "grp_0003: single figure(para=10), title: '通胀指标难以软化至2%目标以下...', credit: None",
       "grp_0004: single figure(para=15), title: '密西根大学通胀预期：短期与长期指标均意外...', credit: 'Bloomberg...'",
