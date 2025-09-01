@@ -1,28 +1,27 @@
-# DOCX → NCJ (Normalized Content JSON) minimal toolkit
+# DOCX to JSON Converter
 
-## 0) Requirements
-- Pandoc is already installed (you said via Homebrew).
-- No Python dependencies needed (pure stdlib).
+## Figure Grouping Algorithm
 
-## 1) Convert .docx to Pandoc AST + extract images
+The converter implements a two-phase figure grouping algorithm to accurately detect related images:
+
+### Phase 1: Same-Paragraph Grouping (Row Layout)
+- Multiple images within the same paragraph are automatically grouped with `layout='row'`
+- Typical in side-by-side image scenarios
+
+### Phase 2: Adjacent-Paragraph Grouping (Column Layout)  
+- Images in consecutive paragraphs with minimal text gaps are grouped with `layout='column'`
+- Only groups if gap ≤ `max_gap_paras` and no substantial text (>max_title_len chars) between images
+- Exception: If combined width ≤ `page_width_ratio` * page_width, uses `layout='row'` 
+
+### Title and Credit Attribution
+- **Title**: Assigned to group's first figure from nearest short text (≤max_title_len chars) above/below
+- **Credit**: Assigned to group's last figure from nearest "来源:/Source:" pattern above/below
+
+### CLI Parameters
 ```bash
-pandoc "your.docx" -t json --extract-media=assets > ast.json
+python to_ncj.py "input.docx" [options]
+  --max_title_len 45        # Max chars for title detection (default: 45)
+  --max_gap_paras 1         # Max paragraph gap for grouping (default: 1) 
+  --page_width_ratio 0.95   # Width ratio for row layout detection (default: 0.95)
+  --debug                   # Include grouping reasoning in output
 ```
-
-## 2) Transform AST → NCJ
-```bash
-python to_ncj.py --source "your.docx" --style-map style.yml < ast.json > content.json
-```
-
-The tool:
-- Preserves order, keeps **semantics** only (h1/h2/paragraph/figure/table).
-- Detects **images** and absorbs nearby **captions** (e.g., lines starting with "图1:"/"Figure 1:"/"Chart 2:" etc.) and **credits** (lines starting with "来源:"/"Source:").
-- Writes `assets[]` with SHA-256 for images (from `--extract-media=assets`).
-
-## 3) Feed `content.json` to your Figma automation
-Your Figma plugin/agent renders `blocks[]` sequentially into the Content Group (vertical Auto Layout, no font size changes). If overflow, extend background height.
-
-## Notes
-- You can tailor regex in `to_ncj.py` for caption/credit detection.
-- For fancier mapping (e.g., custom Word styles), keep updating `style.yml` and extend the classifier in the script if you need strict style-based routing.
-- Tables are emitted as a stub; if your reports rely on tables, add a handler for Pandoc's Table node (version-specific).
