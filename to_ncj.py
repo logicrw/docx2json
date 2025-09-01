@@ -452,7 +452,7 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
         # Mark credit paragraph as consumed  
         if group.credit:
             for para_idx, text in enumerate(para_texts):
-                if normalize_credit(text) == group.credit or is_credit_line(text):
+                if normalize_credit(text) == group.credit:
                     para_consumed.add(para_idx)
                     break
     

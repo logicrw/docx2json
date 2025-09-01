@@ -76,10 +76,6 @@
       "layout": "column"
     },
     {
-      "type": "paragraph",
-      "text": "来源: Bloomberg"
-    },
-    {
       "type": "figure",
       "image": {
         "asset_id": "img_b2b73f4d8b19"
@@ -90,10 +86,6 @@
       "group_seq": 1,
       "group_len": 1,
       "layout": "column"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源: Forbes, CNBC"
     },
     {
       "type": "paragraph",
@@ -110,10 +102,6 @@
       "group_seq": 1,
       "group_len": 1,
       "layout": "column"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源: Citi"
     },
     {
       "type": "paragraph",
@@ -145,10 +133,6 @@
     },
     {
       "type": "paragraph",
-      "text": "来源: Yahoo Finance, Arkham"
-    },
-    {
-      "type": "paragraph",
       "text": "另一方面，ETF资金流入依然非常强劲。彭博报导称，BTC和ETH ETF上周录得自推出以来的最大单周资金流入，使这对组合跻身所有股权类ETF的前五名。这一动向主要由ETF资金流入激增推动，单周流入额达170亿美元，打破了之前的记录。"
     },
     {
@@ -162,10 +146,6 @@
       "group_seq": 1,
       "group_len": 1,
       "layout": "column"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源: Bloomberg, X"
     },
     {
       "type": "figure",
@@ -210,10 +190,6 @@
       "group_seq": 2,
       "group_len": 2,
       "layout": "row"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源: DB"
     },
     {
       "type": "figure",

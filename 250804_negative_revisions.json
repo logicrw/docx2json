@@ -189,10 +189,6 @@
     },
     {
       "type": "paragraph",
-      "text": "来源：财富"
-    },
-    {
-      "type": "paragraph",
       "text": "谈到政策影响，Trump 总统也再次延后实施新一轮关税，从原定的 8 月 1 日延后至 8 月 7 日，为本周的密集谈判铺路。谈判焦点将放在瑞士（关税高达 39%）、台湾、加拿大和巴西，同时市场也将持续关注俄乌局势升温，以及美国部署潜舰的后续发展。"
     },
     {
@@ -226,10 +222,6 @@
       "group_seq": 2,
       "group_len": 2,
       "layout": "column"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源： CNBCABC新闻"
     },
     {
       "type": "figure",
@@ -402,10 +394,6 @@
       "group_seq": 2,
       "group_len": 2,
       "layout": "row"
-    },
-    {
-      "type": "paragraph",
-      "text": "来源：凯子"
     },
     {
       "type": "paragraph",
