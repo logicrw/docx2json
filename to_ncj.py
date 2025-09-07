@@ -276,14 +276,23 @@ def extract_figures_from_docx(doc: Document, docx_path: str, converter=None) -> 
             # Extract table text content
             table_text = ""
             try:
-                # Get all text content from table cells
+                # Get text from table cells more accurately to avoid duplication
                 cell_texts = []
-                for cell in element.iter():
-                    if hasattr(cell, 'text') and cell.text and cell.text.strip():
-                        cell_texts.append(cell.text.strip())
+                # Only get text from w:t (text) elements to avoid duplication
+                for t_elem in element.xpath('.//w:t', namespaces={'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}):
+                    if t_elem.text and t_elem.text.strip():
+                        cell_texts.append(t_elem.text.strip())
                 table_text = " ".join(cell_texts).strip()
             except Exception as e:
-                table_text = ""
+                # Fallback to simpler method if xpath fails
+                try:
+                    cell_texts = []
+                    for cell in element.iter():
+                        if cell.tag.endswith('}t') and cell.text and cell.text.strip():
+                            cell_texts.append(cell.text.strip())
+                    table_text = " ".join(cell_texts).strip()
+                except:
+                    table_text = ""
             
             # Convert traditional to simplified if converter provided
             if converter and table_text:
@@ -628,11 +637,26 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
         
         # Mark credit paragraph as consumed (check both original and extracted content)
         if group.credit:
+            # Find the closest credit paragraph to the last figure in this group
+            last_fig = group.figures[-1]
+            best_match_idx = None
+            best_distance = float('inf')
+            
             for para_idx, text in enumerate(para_texts):
                 # Check if this paragraph is a source paragraph with matching content
-                if (is_source_paragraph(text) and extract_source_content(text) == group.credit) or normalize_credit(text) == group.credit:
-                    para_consumed.add(para_idx)
-                    break
+                # or if normalizing this text produces the same credit
+                if (is_source_paragraph(text) and extract_source_content(text) == group.credit) or \
+                   (text and normalize_credit(text) == group.credit):
+                    distance = abs(para_idx - last_fig.para_idx)
+                    if distance < best_distance:
+                        best_distance = distance
+                        best_match_idx = para_idx
+            
+            # Mark the closest match as consumed
+            if best_match_idx is not None:
+                para_consumed.add(best_match_idx)
+                if config.debug:
+                    debug_info.append(f"Consumed closest para {best_match_idx}: '{para_texts[best_match_idx][:30]}...' -> credit: '{group.credit}' (distance: {best_distance})")
     
     # Process all content in document order
     group_counter = 1

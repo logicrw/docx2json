@@ -282,18 +282,6 @@
   ],
   "report": {
     "warnings": [],
-    "debug": [
-      "grp_0001: single figure(para=1), title: None, credit: None",
-      "grp_0002: row by same-paragraph(para=4, 2 images), title(heuristic): '当前市场情绪...', credit(explicit): 'Source: FT, Reddit...'",
-      "grp_0003: single figure(para=10), title(heuristic): '通胀指标难以软化至2%目标以下...', credit: None",
-      "grp_0004: single figure(para=15), title(heuristic): '密西根大学通胀预期：短期与长期指标均意外...', credit(explicit): 'Source: Bloomberg...'",
-      "grp_0005: single figure(para=19), title(heuristic): '财长贝森特近期宣称“中性”利率应低约15...', credit(explicit): 'Source: Forbes, CNBC...'",
-      "grp_0006: single figure(para=25), title(heuristic): '强劲PPI后，市场仅定价9月会议降息一次...', credit(explicit): 'Source: Citi...'",
-      "grp_0007: column by adjacent-paragraphs(para=31, para=32, gap≤1), title(heuristic): '过去一周政府的SBR相关头条令市场失望...', credit(explicit): 'Source: Yahoo Financ...'",
-      "grp_0008: single figure(para=38), title(heuristic): 'BTC & ETH ETF 上周资金流入...', credit(explicit): 'Source: Bloomberg, X...'",
-      "grp_0009: single figure(para=42), title(heuristic): '主要由ETH流入激增170亿美元推动...', credit: None",
-      "grp_0010: row by same-paragraph(para=48, 2 images), title(heuristic): '美国消费者对股价的看涨程度 vs 自身收...', credit(explicit): 'Source: DB...'",
-      "grp_0011: single figure(para=52), title(heuristic): '基金经理现金水准降至周期低点...', credit: None"
-    ]
+    "debug": []
   }
 }
