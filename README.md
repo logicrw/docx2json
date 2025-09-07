@@ -10,6 +10,29 @@
 - **完整内容提取**：支持段落文本和表格内容的完整提取
 - **标题与来源归属**：智能分配图像标题和来源信息
 - **文档顺序保持**：按原文档顺序输出所有内容块
+- **繁体转简体**：支持繁体中文自动转换为简体中文（保护英文、数字、URL等）
+- **显式标记系统**：支持"标题"/"Title"和"来源"/"Source"显式标记，提高检测准确性
+- **统一来源格式**：所有来源信息统一添加"Source: "前缀
+
+### 🔍 显式标记系统 (新特性)
+
+项目现已支持显式标记系统，大幅提升标题和来源检测的准确性：
+
+#### 显式标记格式
+- **标题标记**：段落开头包含"标题"或"Title"
+- **来源标记**：段落开头包含"来源"或"Source"
+
+#### 检测优先级
+1. **显式标记优先**：优先检测带有标记的段落
+2. **启发式fallback**：如无显式标记，使用优化后的启发式算法
+3. **智能内容提取**：自动去除标记前缀，提取真实内容
+
+#### 使用建议
+在DOCX文档中直接添加标记，例如：
+```
+标题：市场情绪分析图表
+来源：Bloomberg, Financial Times
+```
 
 ### 🧠 二阶段分组算法
 
@@ -22,15 +45,17 @@
 - 仅当间隔≤`max_gap_paras`且无大量文本(>max_title_len chars)时分组
 - 特殊规则：若组合宽度≤`page_width_ratio` * 页面宽度，则使用`layout='row'`
 
-#### 标题与来源归属
-- **标题**：分配给组内首图，来自附近的短文本(≤max_title_len chars)
-- **来源**：分配给组内末图，匹配"来源:/Source:"模式的文本
+#### 标题与来源归属（增强版）
+- **显式标记优先**：检测"标题"/"Title"和"来源"/"Source"标记的段落
+- **智能启发式fallback**：标题搜索图片前方文本(≤max_title_len chars)，来源搜索图片后方文本
+- **统一格式**：所有来源统一添加"Source: "前缀
 
 ## 安装
 
 ### 环境要求
 - Python 3.7+
 - python-docx 库
+- opencc-python-reimplemented 库（繁体转简体功能）
 
 ### 安装步骤
 ```bash
@@ -43,7 +68,7 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # 安装依赖
-pip install python-docx
+pip install python-docx opencc-python-reimplemented
 ```
 
 ## 使用方法
@@ -56,12 +81,14 @@ python to_ncj.py "document.docx"
 ### 完整参数
 ```bash
 python to_ncj.py "input.docx" [options]
-  --out content.json        # 输出JSON文件 (默认: content.json)
-  --assets-dir assets/media # 图像资源目录 (默认: assets/media)
-  --max_title_len 45        # 标题检测最大字符数 (默认: 45)
-  --max_gap_paras 1         # 分组最大段落间隔 (默认: 1) 
-  --page_width_ratio 0.95   # 行布局检测宽度比例 (默认: 0.95)
-  --debug                   # 在输出中包含分组推理信息
+  --out content.json              # 输出JSON文件 (默认: content.json)
+  --assets-dir assets/media       # 图像资源目录 (默认: assets/media)
+  --max_title_len 60              # 标题检测最大字符数 (默认: 60)
+  --max_gap_paras 1               # 分组最大段落间隔 (默认: 1) 
+  --page_width_ratio 0.95         # 行布局检测宽度比例 (默认: 0.95)
+  --traditional-to-simplified     # 启用繁体转简体 (保护英文/数字/URL)
+  --no-explicit-markers           # 禁用显式标记检测，仅使用启发式算法
+  --debug                         # 在输出中包含分组推理信息
 ```
 
 ### 示例
@@ -69,11 +96,14 @@ python to_ncj.py "input.docx" [options]
 # 基本转换
 python to_ncj.py "报告.docx" --out report.json
 
+# 带繁体转简体的转换
+python to_ncj.py "繁體文檔.docx" --traditional-to-simplified --assets-dir assets/
+
 # 带调试信息的转换
 python to_ncj.py "分析.docx" --debug --assets-dir images/
 
-# 调整分组参数
-python to_ncj.py "文档.docx" --max_gap_paras 2 --max_title_len 60
+# 仅使用启发式算法（禁用显式标记）
+python to_ncj.py "文档.docx" --no-explicit-markers --max_gap_paras 2
 ```
 
 ## 输出格式
@@ -169,13 +199,22 @@ docx2json/
 ## 常见问题
 
 ### Q: 为什么有些图像没有标题？
-A: 标题分配基于附近文本的长度和位置。文档标题不会分配给首图，确保标题归属的准确性。
+A: 标题分配基于附近文本的长度和位置。建议使用显式标记（"标题："或"Title:"）来提高检测准确性。
 
 ### Q: 如何调整分组敏感度？
 A: 使用`--max_gap_paras`调整段落间隔容忍度，使用`--max_title_len`调整标题检测长度。
 
 ### Q: 输出的图像文件在哪里？
-A: 图像保存在`--assets-dir`指定的目录中，文件名使用SHA256哈希确保唯一性。
+A: 图像保存在`--assets-dir`指定的目录中，文件名使用SHA256哈希确保唯一性。每个文档的图像将保存在以源文件名命名的子目录中。
+
+### Q: 繁体转简体功能是否会影响英文内容？
+A: 不会。该功能使用智能保护机制，仅转换中文字符，保护英文文本、数字、URL和标点符号不被修改。
+
+### Q: 显式标记系统是否兼容旧文档？
+A: 完全兼容。如果文档中没有显式标记，系统会自动使用优化后的启发式算法作为fallback。
+
+### Q: 所有来源信息都会添加"Source: "前缀吗？
+A: 是的。无论原文档中来源格式如何，输出时都会统一添加"Source: "前缀，确保格式一致性。
 
 ## License
 

@@ -41,7 +41,7 @@
         "asset_id": "img_8ec9cb9ae6e9"
       },
       "title": null,
-      "credit": "彭博社",
+      "credit": "Source: 彭博社",
       "group_id": "grp_0002",
       "group_seq": 2,
       "group_len": 2,
@@ -69,7 +69,7 @@
         "asset_id": "img_d4ca6e3b06c4"
       },
       "title": null,
-      "credit": "彭博社",
+      "credit": "Source: 彭博社",
       "group_id": "grp_0003",
       "group_seq": 2,
       "group_len": 2,
@@ -105,7 +105,7 @@
         "asset_id": "img_b6a9fd5b0797"
       },
       "title": null,
-      "credit": "彭博社",
+      "credit": "Source: 彭博社",
       "group_id": "grp_0004",
       "group_seq": 2,
       "group_len": 2,
@@ -133,7 +133,7 @@
         "asset_id": "img_f8dc418031b4"
       },
       "title": null,
-      "credit": "彭博社",
+      "credit": "Source: 彭博社",
       "group_id": "grp_0005",
       "group_seq": 2,
       "group_len": 2,
@@ -152,7 +152,7 @@
       "image": {
         "asset_id": "img_308defa20ceb"
       },
-      "title": "真相社交，华尔街日报，彭博社",
+      "title": null,
       "credit": null,
       "group_id": "grp_0006",
       "group_seq": 1,
@@ -173,6 +173,10 @@
     },
     {
       "type": "paragraph",
+      "text": "真相社交，华尔街日报，彭博社"
+    },
+    {
+      "type": "paragraph",
       "text": "上周五市场的剧烈反应也盖过了近期美联储偏鹰派的会议内容。会中 Powell 强调，美联储已在尽力透过维持利率不变以应对商品通胀。同时，随著美联储理事 Kugler 辞职，Trump 总统可能在短期内提名新的人选，对美联储的施压只会进一步升高。"
     },
     {
@@ -181,7 +185,7 @@
         "asset_id": "img_1e4a81f54c2d"
       },
       "title": "美联储在最新一次会议上承认商品通胀压力正在上升",
-      "credit": "财富",
+      "credit": "Source: 财富",
       "group_id": "grp_0007",
       "group_seq": 1,
       "group_len": 1,
@@ -217,7 +221,7 @@
         "asset_id": "img_aaea9d097d0b"
       },
       "title": null,
-      "credit": "CNBCABC新闻",
+      "credit": "Source: CNBCABC新闻",
       "group_id": "grp_0008",
       "group_seq": 2,
       "group_len": 2,
@@ -249,6 +253,10 @@
     },
     {
       "type": "paragraph",
+      "text": "光谱市场"
+    },
+    {
+      "type": "paragraph",
       "text": "股市方面，财报季迄今表现不俗，Visa、Mastercard 和 Amex 均报告了支付量和消费动能的稳健增长，而银行的财报也大致符合预期。科技板块方面，消费者在商品和运输领域持续展现韧性，Meta 和 Microsoft 盈利表现出色，但最终被 Amazon 和 Coinbase 令人失望的财报所拖累。"
     },
     {
@@ -260,7 +268,7 @@
       "image": {
         "asset_id": "img_ac89c7f55c68"
       },
-      "title": "光谱市场",
+      "title": null,
       "credit": null,
       "group_id": "grp_0010",
       "group_seq": 1,
@@ -325,7 +333,7 @@
         "asset_id": "img_180933dec0c2"
       },
       "title": "BTC 多头期货清算超过 10 亿美元，结束了艰难的一周",
-      "credit": "彭博社",
+      "credit": "Source: 彭博社",
       "group_id": "grp_0013",
       "group_seq": 1,
       "group_len": 1,
@@ -389,7 +397,7 @@
         "asset_id": "img_b88b3366afae"
       },
       "title": null,
-      "credit": "凯子",
+      "credit": "Source: 凯子",
       "group_id": "grp_0015",
       "group_seq": 2,
       "group_len": 2,
@@ -535,20 +543,20 @@
     "warnings": [],
     "debug": [
       "grp_0001: single figure(para=1), title: None, credit: None",
-      "grp_0002: row by same-paragraph(para=6, 2 images), title: '近年来最大规模的两个月就业数据下修（除疫...', credit: '彭博社...'",
-      "grp_0003: row by same-paragraph(para=12, 2 images), title: '多项领先指标显示就业市场仍有下行压力...', credit: '彭博社...'",
-      "grp_0004: row by same-paragraph(para=19, 2 images), title: '2 年期收益率遭遇近年来最大单日跌幅之一...', credit: '彭博社...'",
-      "grp_0005: row by same-paragraph(para=23, 2 images), title: '利率市场定价反映年底前 60 个基点左右...', credit: '彭博社...'",
-      "grp_0006: row by same-paragraph(para=28, 2 images), title: '真相社交，华尔街日报，彭博社...', credit: None",
-      "grp_0007: single figure(para=34), title: '美联储在最新一次会议上承认商品通胀压力正...', credit: '财富...'",
-      "grp_0008: column by adjacent-paragraphs(para=42, para=43, gap≤1), title: '随著关税收入增加，美国财政收支在近几个月...', credit: 'CNBCABC新闻...'",
-      "grp_0009: row by same-paragraph(para=47, 2 images), title: '资本大规模回流美国市场，美元大幅反弹...', credit: None",
-      "grp_0010: single figure(para=53), title: '光谱市场...', credit: None",
-      "grp_0011: single figure(para=57), title: '股市中散户投机情绪仍然非常高涨...', credit: None",
-      "grp_0012: row by same-paragraph(para=63, 2 images), title: 'Coinbase 股价自 7 月高点回落...', credit: None",
-      "grp_0013: single figure(para=67), title: 'BTC 多头期货清算超过 10 亿美元，...', credit: '彭博社...'",
-      "grp_0014: row by same-paragraph(para=73, 2 images), title: '由于整体市场风险情绪降温，ETF 在上周...', credit: None",
-      "grp_0015: row by same-paragraph(para=79, 2 images), title: '次级市场流动性的显著改善，是机构化进程的...', credit: '凯子...'"
+      "grp_0002: row by same-paragraph(para=6, 2 images), title(heuristic): '近年来最大规模的两个月就业数据下修（除疫...', credit(explicit): 'Source: 彭博社...'",
+      "grp_0003: row by same-paragraph(para=12, 2 images), title(heuristic): '多项领先指标显示就业市场仍有下行压力...', credit(explicit): 'Source: 彭博社...'",
+      "grp_0004: row by same-paragraph(para=19, 2 images), title(heuristic): '2 年期收益率遭遇近年来最大单日跌幅之一...', credit(explicit): 'Source: 彭博社...'",
+      "grp_0005: row by same-paragraph(para=23, 2 images), title(heuristic): '利率市场定价反映年底前 60 个基点左右...', credit(explicit): 'Source: 彭博社...'",
+      "grp_0006: row by same-paragraph(para=28, 2 images), title: None, credit: None",
+      "grp_0007: single figure(para=34), title(heuristic): '美联储在最新一次会议上承认商品通胀压力正...', credit(explicit): 'Source: 财富...'",
+      "grp_0008: column by adjacent-paragraphs(para=42, para=43, gap≤1), title(heuristic): '随著关税收入增加，美国财政收支在近几个月...', credit(explicit): 'Source: CNBCABC新闻...'",
+      "grp_0009: row by same-paragraph(para=47, 2 images), title(heuristic): '资本大规模回流美国市场，美元大幅反弹...', credit: None",
+      "grp_0010: single figure(para=53), title: None, credit: None",
+      "grp_0011: single figure(para=57), title(heuristic): '股市中散户投机情绪仍然非常高涨...', credit: None",
+      "grp_0012: row by same-paragraph(para=63, 2 images), title(heuristic): 'Coinbase 股价自 7 月高点回落...', credit: None",
+      "grp_0013: single figure(para=67), title(heuristic): 'BTC 多头期货清算超过 10 亿美元，...', credit(explicit): 'Source: 彭博社...'",
+      "grp_0014: row by same-paragraph(para=73, 2 images), title(heuristic): '由于整体市场风险情绪降温，ETF 在上周...', credit: None",
+      "grp_0015: row by same-paragraph(para=79, 2 images), title(heuristic): '次级市场流动性的显著改善，是机构化进程的...', credit(explicit): 'Source: 凯子...'"
     ]
   }
 }

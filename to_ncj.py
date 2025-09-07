@@ -14,6 +14,7 @@ from typing import List, Dict, Any, Tuple, Optional, NamedTuple
 from dataclasses import dataclass
 from docx import Document
 from docx.shared import Emu
+import opencc
 
 @dataclass
 class FigureCandidate:
@@ -39,11 +40,59 @@ class GroupCandidate:
 # --------- Configuration and Helpers ----------
 class Config:
     def __init__(self):
-        self.max_title_len = 45
+        self.max_title_len = 60
         self.max_gap_paras = 1
         self.page_width_ratio = 0.95
         self.debug = False
         self.assets_dir = "assets/media"
+        self.traditional_to_simplified = False  # Enable traditional to simplified conversion
+        self.use_explicit_markers = True  # Use explicit title/source markers for better accuracy
+
+def safe_traditional_to_simplified(text: str, converter) -> str:
+    """安全的繁简转换，保护特定模式"""
+    if not text or not text.strip():
+        return text
+    
+    # 保护模式：先替换为占位符
+    protected_replacements = []
+    temp_text = text
+    
+    # 保护拉丁字符（包括单词、缩写、网站等）
+    latin_pattern = r'\b[a-zA-Z][a-zA-Z0-9\-\.]*[a-zA-Z0-9]\b|\b[a-zA-Z]\b'
+    latin_matches = re.findall(latin_pattern, temp_text)
+    for i, match in enumerate(latin_matches):
+        placeholder = f'___LATIN_{i:03d}___'
+        protected_replacements.append((placeholder, match))
+        temp_text = temp_text.replace(match, placeholder, 1)
+    
+    # 保护数字和百分比
+    number_pattern = r'\d+\.?\d*%?'
+    number_matches = re.findall(number_pattern, temp_text)
+    for i, match in enumerate(number_matches):
+        placeholder = f'___NUMBER_{i:03d}___'
+        protected_replacements.append((placeholder, match))
+        temp_text = temp_text.replace(match, placeholder, 1)
+    
+    # 保护URL和邮箱
+    url_pattern = r'https?://[^\s]+|\b[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}\b'
+    url_matches = re.findall(url_pattern, temp_text)
+    for i, match in enumerate(url_matches):
+        placeholder = f'___URL_{i:03d}___'
+        protected_replacements.append((placeholder, match))
+        temp_text = temp_text.replace(match, placeholder, 1)
+    
+    # 执行繁简转换
+    try:
+        simplified_text = converter.convert(temp_text)
+    except Exception:
+        # 转换失败时返回原文
+        simplified_text = temp_text
+    
+    # 恢复保护的内容
+    for placeholder, original in reversed(protected_replacements):
+        simplified_text = simplified_text.replace(placeholder, original, 1)
+    
+    return simplified_text
 
 def sha256_of_file(path: str) -> str:
     h = hashlib.sha256()
@@ -54,10 +103,13 @@ def sha256_of_file(path: str) -> str:
 
 def normalize_credit(text: str) -> str:
     if not text: return ""
-    # Remove 来源:/Source: (both half-width and full-width colons)
-    text = re.sub(r'^\s*(来源|Source)\s*[：:]\s*', '', text, flags=re.I)
+    # Remove 来源:/來源:/Source: (both half-width and full-width colons)
+    text = re.sub(r'^\s*(来源|來源|Source)\s*[：:]\s*', '', text, flags=re.I)
     # Remove leading/trailing spaces and ending punctuation
     text = text.strip().rstrip('.,;，。；')
+    # Add unified "Source: " prefix
+    if text:
+        text = f"Source: {text}"
     return text
 
 def is_short_title(text: str, max_len: int) -> bool:
@@ -67,13 +119,81 @@ def is_short_title(text: str, max_len: int) -> bool:
     if len(text.strip()) > max_len:
         return False
     # Exclude obvious credit lines
-    if re.match(r'^\s*(来源|Source)\s*[：:]', text, re.I):
+    if re.match(r'^\s*(来源|來源|Source)\s*[：:]', text, re.I):
         return False
     return True
 
 def is_credit_line(text: str) -> bool:
-    """Check if text is a credit/source line"""
-    return bool(re.match(r'^\s*(来源|Source)\s*[：:]', text, re.I))
+    """Check if text is a credit/source line (legacy method)"""
+    return bool(re.match(r'^\s*(来源|來源|Source)\s*[：:]', text, re.I))
+
+def is_potential_credit_line(text: str, max_len: int = 60) -> bool:
+    """更严格但增强的来源检测 - 仅使用传统严格模式"""
+    if not text or len(text.strip()) == 0:
+        return False
+    if len(text.strip()) > max_len:  # 来源信息通常较短
+        return False
+    
+    # 传统严格模式：以"来源:/Source:"开头
+    if re.match(r'^\s*(来源|來源|Source)\s*[：:]', text, re.I):
+        return True
+    
+    return False
+
+def is_title_paragraph(text: str) -> bool:
+    """检测是否为明确标记的标题段落"""
+    if not text:
+        return False
+    text_cleaned = text.strip().lower()
+    return (text_cleaned.startswith('标题') or 
+            text_cleaned.startswith('title'))
+
+def is_source_paragraph(text: str) -> bool:
+    """检测是否为明确标记的来源段落"""  
+    if not text:
+        return False
+    text_cleaned = text.strip().lower()
+    return (text_cleaned.startswith('来源') or 
+            text_cleaned.startswith('來源') or
+            text_cleaned.startswith('source'))
+
+def extract_title_content(text: str) -> str:
+    """提取标题内容（去除前缀标记）"""
+    if not text:
+        return ""
+    text = text.strip()
+    
+    # 定义所有可能的标题前缀（按长度排序，长的优先）
+    prefixes = [
+        '标题：', '标题:', 'Title：', 'Title:', 
+        '标题 ', 'Title ', '标题', 'Title'
+    ]
+    
+    for prefix in prefixes:
+        if text.lower().startswith(prefix.lower()):
+            return text[len(prefix):].strip()
+    
+    return text
+
+def extract_source_content(text: str) -> str:
+    """提取来源内容（去除前缀标记，统一添加Source前缀）"""
+    if not text:
+        return ""
+    text = text.strip()
+    
+    # 定义所有可能的来源前缀（按长度排序，长的优先）
+    prefixes = [
+        '来源：', '来源:', '來源：', '來源:', 'Source：', 'Source:',
+        '来源 ', '來源 ', 'Source ', '来源', '來源', 'Source'
+    ]
+    
+    for prefix in prefixes:
+        if text.lower().startswith(prefix.lower()):
+            content = text[len(prefix):].strip()
+            # Add unified "Source: " prefix
+            return f"Source: {content}" if content else ""
+    
+    return text
 
 DOC_TITLE_RE = re.compile(r'^\s*(\d{6})\s*-\s*(.+)')
 def parse_date_from_yyMMdd(yyMMdd: str) -> Optional[str]:
@@ -85,7 +205,7 @@ def parse_date_from_yyMMdd(yyMMdd: str) -> Optional[str]:
         return None
 
 # --------- Phase 1: Extract Figure Candidates ----------
-def extract_figures_from_docx(doc: Document, docx_path: str) -> Tuple[List[FigureCandidate], List[str], int]:
+def extract_figures_from_docx(doc: Document, docx_path: str, converter=None) -> Tuple[List[FigureCandidate], List[str], int]:
     """Extract figure candidates and all text content (paragraphs + tables) with real rId mapping"""
     figures = []
     para_texts = []
@@ -108,6 +228,8 @@ def extract_figures_from_docx(doc: Document, docx_path: str) -> Tuple[List[Figur
             if paragraph_counter < len(doc.paragraphs):
                 para = doc.paragraphs[paragraph_counter]
                 para_text = para.text.strip()
+                if converter:
+                    para_text = safe_traditional_to_simplified(para_text, converter)
                 para_texts.append(para_text)
                 
                 # Find drawings in this paragraph
@@ -162,6 +284,10 @@ def extract_figures_from_docx(doc: Document, docx_path: str) -> Tuple[List[Figur
                 table_text = " ".join(cell_texts).strip()
             except Exception as e:
                 table_text = ""
+            
+            # Convert traditional to simplified if converter provided
+            if converter and table_text:
+                table_text = safe_traditional_to_simplified(table_text, converter)
             
             # Add table text to para_texts
             para_texts.append(table_text)
@@ -362,7 +488,7 @@ def group_figures(figures: List[FigureCandidate], para_texts: List[str],
     return groups
 
 # --------- Phase 3: Assign Titles and Credits ----------
-def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str], config: Config, doc_full_title: str = None):
+def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str], config: Config, doc_full_title: str = None, converter=None):
     """Assign titles and credits to groups"""
     
     for group in groups:
@@ -372,33 +498,73 @@ def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str
         first_fig = group.figures[0]
         last_fig = group.figures[-1]
         
-        # Find title (near first figure)
         title = None
-        for offset in [-2, -1, 1]:  # Check before first, then after
-            check_idx = first_fig.para_idx + offset
-            if 0 <= check_idx < len(para_texts):
-                text = para_texts[check_idx]
-                # Skip document title (usually first paragraph)
-                if text and text != doc_full_title and is_short_title(text, config.max_title_len):
-                    title = text
-                    break
-        
-        # Find credit (near last figure, prefer after)
         credit = None
-        for offset in [1, 2, -1, -2]:  # Check after last, then before
-            check_idx = last_fig.para_idx + offset
-            if 0 <= check_idx < len(para_texts):
-                text = para_texts[check_idx]
-                if text and is_credit_line(text):
-                    credit = normalize_credit(text)
-                    break
+        
+        if config.use_explicit_markers:
+            # New method: Look for explicit markers
+            # Find title (look before first figure for "标题" or "Title")
+            for offset in [-2, -1]:  # Check before figure
+                check_idx = first_fig.para_idx + offset
+                if 0 <= check_idx < len(para_texts):
+                    text = para_texts[check_idx]
+                    if text and is_title_paragraph(text):
+                        title_content = extract_title_content(text)
+                        if title_content and title_content != doc_full_title:
+                            title = safe_traditional_to_simplified(title_content, converter) if converter else title_content
+                            break
+            
+            # Find credit (look after last figure for "来源" or "Source")
+            for offset in [1, 2]:  # Check after figure
+                check_idx = last_fig.para_idx + offset
+                if 0 <= check_idx < len(para_texts):
+                    text = para_texts[check_idx]
+                    if text and is_source_paragraph(text):
+                        credit_content = extract_source_content(text)
+                        if credit_content:
+                            credit = safe_traditional_to_simplified(credit_content, converter) if converter else credit_content
+                            break
+        
+        # Fallback to legacy heuristic method if explicit markers not found
+        if not title:
+            for offset in [-2, -1]:  # Check only before first figure (titles should precede images)
+                check_idx = first_fig.para_idx + offset
+                if 0 <= check_idx < len(para_texts):
+                    text = para_texts[check_idx]
+                    # Skip document title and explicit markers (to avoid double processing)
+                    if (text and text != doc_full_title and 
+                        not is_title_paragraph(text) and not is_source_paragraph(text) and
+                        is_short_title(text, config.max_title_len)):
+                        title = safe_traditional_to_simplified(text, converter) if converter else text
+                        break
+        
+        if not credit:
+            for offset in [1, 2]:  # Check only after last figure (sources should follow images)
+                check_idx = last_fig.para_idx + offset
+                if 0 <= check_idx < len(para_texts):
+                    text = para_texts[check_idx]
+                    # Skip explicit markers (to avoid double processing)
+                    if text and not is_title_paragraph(text) and not is_source_paragraph(text) and is_potential_credit_line(text):
+                        credit = normalize_credit(text)
+                        if converter:
+                            credit = safe_traditional_to_simplified(credit, converter)
+                        break
         
         group.title = title
         group.credit = credit
         
-        # Update debug reason
-        title_part = f"title: '{title[:20]}...'" if title else "title: None"
-        credit_part = f"credit: '{credit[:20]}...'" if credit else "credit: None"
+        # Update debug reason with method indication
+        method_title = "explicit" if (config.use_explicit_markers and title and 
+                                    any(is_title_paragraph(para_texts[first_fig.para_idx + offset]) 
+                                       for offset in [-2, -1] if 0 <= first_fig.para_idx + offset < len(para_texts) and 
+                                       extract_title_content(para_texts[first_fig.para_idx + offset]) == title)) else "heuristic"
+        method_credit = "explicit" if (config.use_explicit_markers and credit and 
+                                     any(is_source_paragraph(para_texts[last_fig.para_idx + offset]) 
+                                        for offset in [1, 2] if 0 <= last_fig.para_idx + offset < len(para_texts) and 
+                                        extract_source_content(para_texts[last_fig.para_idx + offset]) == credit)) else "heuristic"
+        
+        title_part = f"title({method_title}): '{title[:20]}...'" if title else "title: None"
+        credit_part = f"credit({method_credit}): '{credit[:20]}...'" if credit else "credit: None"
         group.reason += f", {title_part}, {credit_part}"
 
 # --------- Main Conversion ----------
@@ -406,8 +572,16 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
     """Convert DOCX to NCJ format with improved figure grouping"""
     doc = Document(docx_path)
     
+    # Initialize traditional to simplified converter if needed
+    converter = None
+    if config.traditional_to_simplified:
+        try:
+            converter = opencc.OpenCC('t2s')  # Traditional to Simplified
+        except Exception as e:
+            print(f"Warning: Failed to initialize OpenCC converter: {e}", file=sys.stderr)
+    
     # Extract figures and paragraph texts
-    figures, para_texts, page_width_emu = extract_figures_from_docx(doc, docx_path)
+    figures, para_texts, page_width_emu = extract_figures_from_docx(doc, docx_path, converter)
     
     # Extract and hash real image assets
     assets = extract_and_hash_images(figures, docx_path, config.assets_dir)
@@ -425,10 +599,12 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
         if match:
             doc_full_title = first_text.strip()  # Full title for comparison
             doc_title = match.group(2).strip()   # Clean title without date
+            if converter:
+                doc_title = safe_traditional_to_simplified(doc_title, converter)
             doc_date = parse_date_from_yyMMdd(match.group(1))
     
     # Assign titles and credits
-    assign_titles_and_credits(groups, para_texts, config, doc_full_title)
+    assign_titles_and_credits(groups, para_texts, config, doc_full_title, converter)
     
     # Build output blocks
     out_blocks = []
@@ -442,17 +618,19 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
         for fig in group.figures:
             para_consumed.add(fig.para_idx)
         
-        # Mark title paragraph as consumed
+        # Mark title paragraph as consumed (check both original and extracted content)
         if group.title:
             for para_idx, text in enumerate(para_texts):
-                if text == group.title:
+                # Check if this paragraph is a title paragraph with matching content
+                if (is_title_paragraph(text) and extract_title_content(text) == group.title) or text == group.title:
                     para_consumed.add(para_idx)
                     break
         
-        # Mark credit paragraph as consumed  
+        # Mark credit paragraph as consumed (check both original and extracted content)
         if group.credit:
             for para_idx, text in enumerate(para_texts):
-                if normalize_credit(text) == group.credit:
+                # Check if this paragraph is a source paragraph with matching content
+                if (is_source_paragraph(text) and extract_source_content(text) == group.credit) or normalize_credit(text) == group.credit:
                     para_consumed.add(para_idx)
                     break
     
@@ -504,9 +682,11 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
             
         elif para_text and para_idx not in para_consumed:
             # Regular text paragraph
+            # Convert text if needed (should already be converted, but double-check)
+            display_text = para_text
             out_blocks.append({
                 "type": "paragraph", 
-                "text": para_text
+                "text": display_text
             })
     
     # Build final NCJ structure
@@ -536,7 +716,7 @@ def main():
     parser.add_argument('--out', default='content.json', help='Output JSON file')
     parser.add_argument('--assets-dir', default='assets/media', 
                        help='Directory to extract image assets')
-    parser.add_argument('--max_title_len', type=int, default=45, 
+    parser.add_argument('--max_title_len', type=int, default=60, 
                        help='Maximum length for title detection')
     parser.add_argument('--max_gap_paras', type=int, default=1,
                        help='Maximum paragraphs gap for grouping')
@@ -544,6 +724,10 @@ def main():
                        help='Page width ratio for row layout detection')
     parser.add_argument('--debug', action='store_true',
                        help='Include debug information in output')
+    parser.add_argument('--traditional-to-simplified', action='store_true',
+                       help='Convert traditional Chinese to simplified Chinese')
+    parser.add_argument('--no-explicit-markers', action='store_true',
+                       help='Disable explicit title/source marker detection (use legacy heuristic only)')
     
     args = parser.parse_args()
     
@@ -554,6 +738,8 @@ def main():
     config.page_width_ratio = args.page_width_ratio
     config.debug = args.debug
     config.assets_dir = args.assets_dir
+    config.traditional_to_simplified = args.traditional_to_simplified
+    config.use_explicit_markers = not args.no_explicit_markers  # Default: use explicit markers
     
     # Convert
     try:
