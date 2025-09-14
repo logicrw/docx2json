@@ -774,8 +774,12 @@ def main():
                        help='Page width ratio for row layout detection')
     parser.add_argument('--debug', action='store_true',
                        help='Include debug information in output')
-    parser.add_argument('--traditional-to-simplified', action='store_true',
-                       help='Convert traditional Chinese to simplified Chinese')
+    parser.add_argument('--traditional-to-simplified', dest='traditional_to_simplified',
+                       action='store_true', default=True,
+                       help='Convert traditional Chinese to simplified Chinese (default: on)')
+    parser.add_argument('--no-traditional-to-simplified', dest='traditional_to_simplified',
+                       action='store_false',
+                       help='Disable traditional→simplified conversion')
     parser.add_argument('--no-explicit-markers', action='store_true',
                        help='Disable explicit title/source marker detection (use legacy heuristic only)')
     parser.add_argument('--self-test-credits', action='store_true',
