@@ -760,8 +760,8 @@ def main():
     parser = argparse.ArgumentParser(description='Convert DOCX to NCJ with advanced figure grouping')
     parser.add_argument('input', help='Input DOCX file')
     parser.add_argument('--out', default='content.json', help='Output JSON file')
-    parser.add_argument('--assets-dir', default='assets/media', 
-                       help='Directory to extract image assets')
+    parser.add_argument('--assets-dir', default='assets', 
+                       help='Directory to extract image assets (per-doc subfolders)')
     parser.add_argument('--max_title_len', type=int, default=60, 
                        help='Maximum length for title detection')
     parser.add_argument('--max_gap_paras', type=int, default=1,
