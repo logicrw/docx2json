@@ -612,7 +612,11 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
     
     # Extract and hash real image assets (per-doc subdirectory under assets_dir)
     doc_base = os.path.splitext(os.path.basename(docx_path))[0]
-    doc_slug = re.sub(r'[^0-9A-Za-z._-]+', '_', doc_base).strip('_') or "doc"
+    # Build slug: lowercase, non [0-9a-z] -> '_', collapse '_', append '_content'
+    tmp = doc_base.lower()
+    tmp = re.sub(r'[^0-9a-z]+', '_', tmp)
+    tmp = re.sub(r'_+', '_', tmp).strip('_')
+    doc_slug = (tmp or "doc") + "_content"
     per_doc_assets_dir = os.path.join(config.assets_dir, doc_slug)
     assets = extract_and_hash_images(figures, docx_path, per_doc_assets_dir)
     
