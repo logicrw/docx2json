@@ -35,6 +35,7 @@ class GroupCandidate:
     layout: str  # 'row' or 'column'
     title: Optional[str] = None
     credit: Optional[str] = None
+    credit_tokens: Optional[List[str]] = None
     reason: Optional[str] = None  # Debug info
 
 # --------- Configuration and Helpers ----------
@@ -101,16 +102,32 @@ def sha256_of_file(path: str) -> str:
             h.update(chunk)
     return h.hexdigest()
 
+def normalize_credits(text: str) -> Tuple[str, List[str]]:
+    """
+    Normalize figure credits to raw credits (no leading label).
+    - Strip leading prefix using regex: ^(?:source|来源|來源)\s*[:：]\s* (case-insensitive)
+    - Split by separators [、，,;；／/|], trim tokens, drop empties, de-duplicate preserving order
+    - Return (joined_str, tokens) where joined_str uses ", " as separator
+    """
+    if not text:
+        return "", []
+    # Strip known prefixes ("Source:" / "来源：" / "來源：")
+    stripped = re.sub(r'^\s*(?:source|来源|來源)\s*[:：]\s*', '', text, flags=re.I)
+    # Split by common separators and clean tokens
+    raw_parts = re.split(r'[、，,;；／/|]+', stripped)
+    seen = set()
+    tokens: List[str] = []
+    for part in raw_parts:
+        tok = part.strip().strip(' .。；;，,')
+        if tok and tok not in seen:
+            seen.add(tok)
+            tokens.append(tok)
+    return (", ".join(tokens), tokens)
+
 def normalize_credit(text: str) -> str:
-    if not text: return ""
-    # Remove 来源:/來源:/Source: (both half-width and full-width colons)
-    text = re.sub(r'^\s*(来源|來源|Source)\s*[：:]\s*', '', text, flags=re.I)
-    # Remove leading/trailing spaces and ending punctuation
-    text = text.strip().rstrip('.,;，。；')
-    # Add unified "Source: " prefix
-    if text:
-        text = f"Source: {text}"
-    return text
+    """Backward-compatible wrapper returning only the normalized credit string"""
+    s, _ = normalize_credits(text)
+    return s
 
 def is_short_title(text: str, max_len: int) -> bool:
     """Check if text could be a figure title"""
@@ -176,24 +193,9 @@ def extract_title_content(text: str) -> str:
     return text
 
 def extract_source_content(text: str) -> str:
-    """提取来源内容（去除前缀标记，统一添加Source前缀）"""
-    if not text:
-        return ""
-    text = text.strip()
-    
-    # 定义所有可能的来源前缀（按长度排序，长的优先）
-    prefixes = [
-        '来源：', '来源:', '來源：', '來源:', 'Source：', 'Source:',
-        '来源 ', '來源 ', 'Source ', '来源', '來源', 'Source'
-    ]
-    
-    for prefix in prefixes:
-        if text.lower().startswith(prefix.lower()):
-            content = text[len(prefix):].strip()
-            # Add unified "Source: " prefix
-            return f"Source: {content}" if content else ""
-    
-    return text
+    """提取来源内容（去除前缀标记；返回原始credits，不加任何前缀）"""
+    s, _ = normalize_credits(text)
+    return s
 
 DOC_TITLE_RE = re.compile(r'^\s*(\d{6})\s*-\s*(.+)')
 def parse_date_from_yyMMdd(yyMMdd: str) -> Optional[str]:
@@ -346,6 +348,16 @@ def extract_and_hash_images(figures: List[FigureCandidate], docx_path: str, asse
     
     # Ensure assets directory exists
     os.makedirs(assets_dir, exist_ok=True)
+    # Build relative prefix for asset filenames (relative to 'assets' root if possible)
+    try:
+        assets_root_abs = os.path.abspath('assets')
+        assets_dir_abs = os.path.abspath(assets_dir)
+        rel_prefix = os.path.relpath(assets_dir_abs, assets_root_abs)
+        if rel_prefix.startswith('..'):
+            # Not under 'assets' root; fallback to basename
+            rel_prefix = os.path.basename(assets_dir)
+    except Exception:
+        rel_prefix = os.path.basename(assets_dir)
     
     # Extract images from DOCX ZIP
     try:
@@ -384,7 +396,7 @@ def extract_and_hash_images(figures: List[FigureCandidate], docx_path: str, asse
                 if asset_id not in assets:
                     assets[asset_id] = {
                         "asset_id": asset_id,
-                        "filename": os.path.join(os.path.basename(assets_dir), output_filename),
+                        "filename": os.path.join(rel_prefix, output_filename),
                         "sha256": sha256_hash
                     }
     
@@ -529,9 +541,12 @@ def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str
                 if 0 <= check_idx < len(para_texts):
                     text = para_texts[check_idx]
                     if text and is_source_paragraph(text):
-                        credit_content = extract_source_content(text)
-                        if credit_content:
-                            credit = safe_traditional_to_simplified(credit_content, converter) if converter else credit_content
+                        credit_str, credit_tokens = normalize_credits(text)
+                        if credit_tokens:
+                            if converter:
+                                credit_tokens = [safe_traditional_to_simplified(t, converter) for t in credit_tokens]
+                            credit = ", ".join(credit_tokens)
+                            group.credit_tokens = credit_tokens
                             break
         
         # Fallback to legacy heuristic method if explicit markers not found
@@ -554,9 +569,12 @@ def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str
                     text = para_texts[check_idx]
                     # Skip explicit markers (to avoid double processing)
                     if text and not is_title_paragraph(text) and not is_source_paragraph(text) and is_potential_credit_line(text):
-                        credit = normalize_credit(text)
-                        if converter:
-                            credit = safe_traditional_to_simplified(credit, converter)
+                        credit_str, credit_tokens = normalize_credits(text)
+                        if credit_tokens:
+                            if converter:
+                                credit_tokens = [safe_traditional_to_simplified(t, converter) for t in credit_tokens]
+                            credit = ", ".join(credit_tokens)
+                            group.credit_tokens = credit_tokens
                         break
         
         group.title = title
@@ -592,8 +610,11 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
     # Extract figures and paragraph texts
     figures, para_texts, page_width_emu = extract_figures_from_docx(doc, docx_path, converter)
     
-    # Extract and hash real image assets
-    assets = extract_and_hash_images(figures, docx_path, config.assets_dir)
+    # Extract and hash real image assets (per-doc subdirectory under assets_dir)
+    doc_base = os.path.splitext(os.path.basename(docx_path))[0]
+    doc_slug = re.sub(r'[^0-9A-Za-z._-]+', '_', doc_base).strip('_') or "doc"
+    per_doc_assets_dir = os.path.join(config.assets_dir, doc_slug)
+    assets = extract_and_hash_images(figures, docx_path, per_doc_assets_dir)
     
     # Group figures
     groups = group_figures(figures, para_texts, page_width_emu, config)
@@ -691,6 +712,7 @@ def convert_docx_to_ncj(docx_path: str, config: Config) -> Dict[str, Any]:
                     "image": {"asset_id": asset_id},
                     "title": group_starting_here.title if seq == 0 else None,  # Title on first figure
                     "credit": group_starting_here.credit if seq == group_len - 1 else None,  # Credit on last figure
+                    "credit_tokens": group_starting_here.credit_tokens if seq == group_len - 1 else None,
                     "group_id": group_id,
                     "group_seq": seq + 1,
                     "group_len": group_len,
@@ -752,6 +774,8 @@ def main():
                        help='Convert traditional Chinese to simplified Chinese')
     parser.add_argument('--no-explicit-markers', action='store_true',
                        help='Disable explicit title/source marker detection (use legacy heuristic only)')
+    parser.add_argument('--self-test-credits', action='store_true',
+                       help='Run credit normalization self-test and exit')
     
     args = parser.parse_args()
     
@@ -765,6 +789,19 @@ def main():
     config.traditional_to_simplified = args.traditional_to_simplified
     config.use_explicit_markers = not args.no_explicit_markers  # Default: use explicit markers
     
+    # Self test for credits normalization
+    if args.self_test_credits:
+        samples = [
+            "Source: FT, Reddit",
+            "来源：FT；WSJ；FT",
+            "來源: BBC／Reuters | FT",
+            " source ：  Bloomberg  ,  Bloomberg  ,  Nikkei  ",
+        ]
+        for s in samples:
+            joined, tokens = normalize_credits(s)
+            print(json.dumps({"input": s, "credit": joined, "tokens": tokens}, ensure_ascii=False))
+        return
+
     # Convert
     try:
         ncj = convert_docx_to_ncj(args.input, config)

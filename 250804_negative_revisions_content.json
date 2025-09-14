@@ -14,6 +14,7 @@
       },
       "title": null,
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0001",
       "group_seq": 1,
       "group_len": 1,
@@ -21,15 +22,16 @@
     },
     {
       "type": "paragraph",
-      "text": "涨多终将回调。在经历了一段「只涨不跌」的行情后，风险资产在全面低于预期的非农就业数据打击下走低。整体就业数据疲软（失业率由 4.117% 升至 4.248%），再次印证了就业市场放缓的趋势，此外，美国劳工统计局也发布了近年来（除疫情期间外）最大规模的两个月就业数据下修（-25.8 万）。"
+      "text": "漲多終將回調。在經歷了一段「只漲不跌」的行情後，風險資產在全面低於預期的非農就業數據打擊下走低。整體就業數據疲軟（失業率由 4.117% 升至 4.248%），再次印證了就業市場放緩的趨勢，此外，美國勞工統計局也發布了近年來（除疫情期間外）最大規模的兩個月就業數據下修（-25.8 萬）。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_ac79747eaa30"
       },
-      "title": "近年来最大规模的两个月就业数据下修（除疫情期间外）令市场措手不及",
+      "title": "近年來最大規模的兩個月就業數據下修（除疫情期間外）令市場措手不及",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0002",
       "group_seq": 1,
       "group_len": 2,
@@ -41,7 +43,10 @@
         "asset_id": "img_8ec9cb9ae6e9"
       },
       "title": null,
-      "credit": "Source: Bloomberg",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
       "group_id": "grp_0002",
       "group_seq": 2,
       "group_len": 2,
@@ -49,15 +54,16 @@
     },
     {
       "type": "paragraph",
-      "text": "雪上加霜的是，ISM 制造业就业指数跌至 2020 年第二季度以来的最低水平，而其他领先指标也预示著就业市场恐将进一步恶化。"
+      "text": "雪上加霜的是，ISM 製造業就業指數跌至 2020 年第二季度以來的最低水平，而其他領先指標也預示著就業市場恐將進一步惡化。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_03a293910220"
       },
-      "title": "多项领先指标显示就业市场仍有下行压力",
+      "title": "多項領先指標顯示就業市場仍有下行壓力",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0003",
       "group_seq": 1,
       "group_len": 2,
@@ -69,7 +75,10 @@
         "asset_id": "img_d4ca6e3b06c4"
       },
       "title": null,
-      "credit": "Source: Bloomberg",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
       "group_id": "grp_0003",
       "group_seq": 2,
       "group_len": 2,
@@ -77,19 +86,20 @@
     },
     {
       "type": "paragraph",
-      "text": "市场反应迅速且剧烈，美国股市收盘下跌 2% 至 3%，美元兑日圆下跌 2.2% 至 147，而对比前一日，利率市场定价所反映的年底前降息预期几乎增加了 25 个基点。"
+      "text": "市場反應迅速且劇烈，美國股市收盤下跌 2% 至 3%，美元兌日圓下跌 2.2% 至 147，而對比前一日，利率市場定價所反映的年底前降息預期幾乎增加了 25 個基點。"
     },
     {
       "type": "paragraph",
-      "text": "收益率变化特别显著，2 年期收益率当日崩跌近 30 个基点，是近五年来最大单日跌幅之一。上周结束时，市场对今年降息预期升至约 60 个基点，而前一天仅为 35 个基点左右，这促使 Trump 总统猛烈抨击美联储主席 Powell 未能及时降息，并批评美国劳工统计局公布「不准确」的就业数据。"
+      "text": "收益率變化特別顯著，2 年期收益率當日崩跌近 30 個基點，是近五年來最大單日跌幅之一。上週結束時，市場對今年降息預期升至約 60 個基點，而前一天僅為 35 個基點左右，這促使 Trump 總統猛烈抨擊美聯儲主席 Powell 未能及時降息，並批評美國勞工統計局公布「不準確」的就業數據。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_b5faf10ceb72"
       },
-      "title": "2 年期收益率遭遇近年来最大单日跌幅之一",
+      "title": "2 年期收益率遭遇近年來最大單日跌幅之一",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0004",
       "group_seq": 1,
       "group_len": 2,
@@ -101,7 +111,10 @@
         "asset_id": "img_b6a9fd5b0797"
       },
       "title": null,
-      "credit": "Source: Bloomberg",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
       "group_id": "grp_0004",
       "group_seq": 2,
       "group_len": 2,
@@ -112,8 +125,9 @@
       "image": {
         "asset_id": "img_916b04850d01"
       },
-      "title": "利率市场定价反映年底前 60 个基点左右的降息预期",
+      "title": "利率市場定價反映年底前 60 個基點左右的降息預期",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0005",
       "group_seq": 1,
       "group_len": 2,
@@ -125,7 +139,10 @@
         "asset_id": "img_f8dc418031b4"
       },
       "title": null,
-      "credit": "Source: Bloomberg",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
       "group_id": "grp_0005",
       "group_seq": 2,
       "group_len": 2,
@@ -133,7 +150,7 @@
     },
     {
       "type": "paragraph",
-      "text": "“ 我们需要准确的就业数据 …… 现在的数据是 Biden 政府任命的人做的。 ” “ 在我看来，现在的就业数据是被操纵过的，目的就是为了让共和党和我丢脸。 ” -- Trump 总统"
+      "text": "“ 我們需要準確的就業數據 …… 現在的數據是 Biden 政府任命的人做的。 ” “ 在我看來，現在的就業數據是被操縱過的，目的就是為了讓共和黨和我丟臉。 ” -- Trump 總統"
     },
     {
       "type": "figure",
@@ -142,6 +159,7 @@
       },
       "title": null,
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0006",
       "group_seq": 1,
       "group_len": 2,
@@ -153,7 +171,12 @@
         "asset_id": "img_9531c10ca8b1"
       },
       "title": null,
-      "credit": "Source: Truth Social, WSJ, Bloomberg",
+      "credit": "Truth Social, WSJ, Bloomberg",
+      "credit_tokens": [
+        "Truth Social",
+        "WSJ",
+        "Bloomberg"
+      ],
       "group_id": "grp_0006",
       "group_seq": 2,
       "group_len": 2,
@@ -161,15 +184,18 @@
     },
     {
       "type": "paragraph",
-      "text": "上周五市场的剧烈反应也盖过了近期美联储偏鹰派的会议内容。会中 Powell 强调，美联储已在尽力透过维持利率不变以应对商品通胀。同时，随著美联储理事 Kugler 辞职，Trump 总统可能在短期内提名新的人选，对美联储的施压只会进一步升高。"
+      "text": "上週五市場的劇烈反應也蓋過了近期美聯儲偏鷹派的會議內容。會中 Powell 強調，美聯儲已在盡力透過維持利率不變以應對商品通脹。同時，隨著美聯儲理事 Kugler 辭職，Trump 總統可能在短期內提名新的人選，對美聯儲的施壓只會進一步升高。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_1e4a81f54c2d"
       },
-      "title": "美联储在最新一次会议上承认商品通胀压力正在上升",
-      "credit": "Source: Fortune",
+      "title": "美聯儲在最新一次會議上承認商品通脹壓力正在上升",
+      "credit": "Fortune",
+      "credit_tokens": [
+        "Fortune"
+      ],
       "group_id": "grp_0007",
       "group_seq": 1,
       "group_len": 1,
@@ -177,23 +203,24 @@
     },
     {
       "type": "paragraph",
-      "text": "谈到政策影响，Trump 总统也再次延后实施新一轮关税，从原定的 8 月 1 日延后至 8 月 7 日，为本周的密集谈判铺路。谈判焦点将放在瑞士（关税高达 39%）、台湾、加拿大和巴西，同时市场也将持续关注俄乌局势升温，以及美国部署潜舰的后续发展。"
+      "text": "談到政策影響，Trump 總統也再次延後實施新一輪關稅，從原定的 8 月 1 日延後至 8 月 7 日，為本週的密集談判鋪路。談判焦點將放在瑞士（關稅高達 39%）、台灣、加拿大和巴西，同時市場也將持續關注俄烏局勢升溫，以及美國部署潛艦的後續發展。"
     },
     {
       "type": "paragraph",
-      "text": "尽管外界对关税谈判存在各种意见和嘲讽，但美国 7 月份收入确实达到创纪录的 1500 亿美元，前一个月也实现了 270 亿美元的盈余，大幅扭转了一年前 710 亿美元的赤字。此外，随著美国例外论叙事回归，市场对美国资产的需求自 5 月以来大幅反弹，任何资本外流的担忧都已烟消云散。"
+      "text": "儘管外界對關稅談判存在各種意見和嘲諷，但美國 7 月份收入確實達到創紀錄的 1500 億美元，前一個月也實現了 270 億美元的盈餘，大幅扭轉了一年前 710 億美元的赤字。此外，隨著美國例外論敘事回歸，市場對美國資產的需求自 5 月以來大幅反彈，任何資本外流的擔憂都已煙消雲散。"
     },
     {
       "type": "paragraph",
-      "text": "美元亦顺势反弹，美元指数从近期低点回升超过 3%，黄金等避险资产则开始转弱。"
+      "text": "美元亦順勢反彈，美元指數從近期低點回升超過 3%，黃金等避險資產則開始轉弱。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_ede3812c7482"
       },
-      "title": "随著关税收入增加，美国财政收支在近几个月大幅改善",
+      "title": "隨著關稅收入增加，美國財政收支在近幾個月大幅改善",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0008",
       "group_seq": 1,
       "group_len": 2,
@@ -205,7 +232,11 @@
         "asset_id": "img_aaea9d097d0b"
       },
       "title": null,
-      "credit": "Source: ABC News, CNBC",
+      "credit": "ABC News, CNBC",
+      "credit_tokens": [
+        "ABC News",
+        "CNBC"
+      ],
       "group_id": "grp_0008",
       "group_seq": 2,
       "group_len": 2,
@@ -216,8 +247,9 @@
       "image": {
         "asset_id": "img_231d13bda64a"
       },
-      "title": "资本大规模回流美国市场，美元大幅反弹",
+      "title": "資本大規模回流美國市場，美元大幅反彈",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0009",
       "group_seq": 1,
       "group_len": 2,
@@ -229,7 +261,10 @@
         "asset_id": "img_f061deb8628d"
       },
       "title": null,
-      "credit": "Source: Spectra Markets",
+      "credit": "Spectra Markets",
+      "credit_tokens": [
+        "Spectra Markets"
+      ],
       "group_id": "grp_0009",
       "group_seq": 2,
       "group_len": 2,
@@ -237,15 +272,18 @@
     },
     {
       "type": "paragraph",
-      "text": "股市方面，财报季迄今表现不俗，Visa、Mastercard 和 Amex 均报告了支付量和消费动能的稳健增长，而银行的财报也大致符合预期。科技板块方面，消费者在商品和运输领域持续展现韧性，Meta 和 Microsoft 盈利表现出色，但最终被 Amazon 和 Coinbase 令人失望的财报所拖累。"
+      "text": "股市方面，財報季迄今表現不俗，Visa、Mastercard 和 Amex 均報告了支付量和消費動能的穩健增長，而銀行的財報也大致符合預期。科技板塊方面，消費者在商品和運輸領域持續展現韌性，Meta 和 Microsoft 盈利表現出色，但最終被 Amazon 和 Coinbase 令人失望的財報所拖累。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_ac89c7f55c68"
       },
-      "title": "疲乏的股市最终选择关注 Amazon/Coinbase 不如预期的业绩，而非 Meta 和 Microsoft 的强劲表现",
-      "credit": "Source: Spectra Markets",
+      "title": "疲乏的股市最終選擇關注 Amazon/Coinbase 不如預期的業績，而非 Meta 和 Microsoft 的強勁表現",
+      "credit": "Spectra Markets",
+      "credit_tokens": [
+        "Spectra Markets"
+      ],
       "group_id": "grp_0010",
       "group_seq": 1,
       "group_len": 1,
@@ -256,8 +294,9 @@
       "image": {
         "asset_id": "img_2b420a8a286d"
       },
-      "title": "股市中散户投机情绪仍然非常高涨",
+      "title": "股市中散戶投機情緒仍然非常高漲",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0011",
       "group_seq": 1,
       "group_len": 1,
@@ -265,19 +304,20 @@
     },
     {
       "type": "paragraph",
-      "text": "最后，在加密货币方面，Coinbase 营收年增 3.3% 至 15 亿美元，但未达分析师预期，且低于 2025 年第一季度的 20 亿美元。净利润受到加密货币和 Circle 持仓未实现收益的提振，不过全球和美国现货交易量在第二季度整体偏淡。"
+      "text": "最後，在加密貨幣方面，Coinbase 營收年增 3.3% 至 15 億美元，但未達分析師預期，且低於 2025 年第一季度的 20 億美元。淨利潤受到加密貨幣和 Circle 持倉未實現收益的提振，不過全球和美國現貨交易量在第二季度整體偏淡。"
     },
     {
       "type": "paragraph",
-      "text": "Coinbase 股价已自 7 月高点回落 25%，随著整体市场情绪走弱，BTC 价格也下跌至 11.2 万美元，上周五有超过 10 亿美元的多头期货遭到清算，是 5 月以来最惨烈的一次。"
+      "text": "Coinbase 股價已自 7 月高點回落 25%，隨著整體市場情緒走弱，BTC 價格也下跌至 11.2 萬美元，上週五有超過 10 億美元的多頭期貨遭到清算，是 5 月以來最慘烈的一次。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_8b986c28105e"
       },
-      "title": "Coinbase 股价自 7 月高点回落 25%，拖累整体加密货币市场情绪走弱",
+      "title": "Coinbase 股價自 7 月高點回落 25%，拖累整體加密貨幣市場情緒走弱",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0012",
       "group_seq": 1,
       "group_len": 2,
@@ -289,7 +329,11 @@
         "asset_id": "img_5b0997e0456d"
       },
       "title": null,
-      "credit": "Source: Bloomberg, Messari",
+      "credit": "Bloomberg, Messari",
+      "credit_tokens": [
+        "Bloomberg",
+        "Messari"
+      ],
       "group_id": "grp_0012",
       "group_seq": 2,
       "group_len": 2,
@@ -300,8 +344,11 @@
       "image": {
         "asset_id": "img_180933dec0c2"
       },
-      "title": "BTC 多头期货清算超过 10 亿美元，结束了艰难的一周",
-      "credit": "Source: Bloomberg",
+      "title": "BTC 多頭期貨清算超過 10 億美元，結束了艱難的一週",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
       "group_id": "grp_0013",
       "group_seq": 1,
       "group_len": 1,
@@ -309,15 +356,16 @@
     },
     {
       "type": "paragraph",
-      "text": "不出所料，BTC 与 ETH 上周均出现显著资金流出，BTC 在周四/周五出现 10 亿美元的流出，为年内单日最差表现之一，而 ETH 也结束了近一个月的连续净流入，在上周五流出 1.52 亿美元。"
+      "text": "不出所料，BTC 與 ETH 上週均出現顯著資金流出，BTC 在週四/週五出現 10 億美元的流出，為年內單日最差表現之一，而 ETH 也結束了近一個月的連續淨流入，在上週五流出 1.52 億美元。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_c95dc26a9e58"
       },
-      "title": "由于整体市场风险情绪降温，ETF 在上周五出现显著的资金流出",
+      "title": "由於整體市場風險情緒降溫，ETF 在上週五出現顯著的資金流出",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0014",
       "group_seq": 1,
       "group_len": 2,
@@ -329,7 +377,10 @@
         "asset_id": "img_5e4e9c09229a"
       },
       "title": null,
-      "credit": "Source: Farside Investors",
+      "credit": "Farside Investors",
+      "credit_tokens": [
+        "Farside Investors"
+      ],
       "group_id": "grp_0014",
       "group_seq": 2,
       "group_len": 2,
@@ -337,15 +388,16 @@
     },
     {
       "type": "paragraph",
-      "text": "整体而言，鉴于资金外流的速度和规模，市场表现其实已较预期稳定，而这也与 BTC 与 Altcoins 的市场深度明显提升有关。随著机构资金与专业投资者加入，次级市场流动性已有改善，避免了 ETF 推出前那种剧烈抛售的情况。"
+      "text": "整體而言，鑑於資金外流的速度和規模，市場表現其實已較預期穩定，而這也與 BTC 與 Altcoins 的市場深度明顯提升有關。隨著機構資金與專業投資者加入，次級市場流動性已有改善，避免了 ETF 推出前那種劇烈拋售的情況。"
     },
     {
       "type": "figure",
       "image": {
         "asset_id": "img_3bfc2fb1da76"
       },
-      "title": "次级市场流动性的显著改善，是机构化进程的一个重要指标",
+      "title": "次級市場流動性的顯著改善，是機構化進程的一個重要指標",
       "credit": null,
+      "credit_tokens": null,
       "group_id": "grp_0015",
       "group_seq": 1,
       "group_len": 2,
@@ -357,7 +409,10 @@
         "asset_id": "img_b88b3366afae"
       },
       "title": null,
-      "credit": "Source: Kaiko",
+      "credit": "Kaiko",
+      "credit_tokens": [
+        "Kaiko"
+      ],
       "group_id": "grp_0015",
       "group_seq": 2,
       "group_len": 2,
@@ -365,137 +420,137 @@
     },
     {
       "type": "paragraph",
-      "text": "展望未来，市场目前处于一个微妙的关口，预期多空双方将陷入拉锯，短期内尚难分出胜负。多头阵营认为市场对非农就业数据过度反应，而空头则会指出，鉴于过去三个月的过热行情，这将是市场转向的初步信号。持续不断的关税消息与 Trump 日益激进的言论，势必进一步加剧市场杂讯，而随著夏季进入后段，整体交易活动减少，市场波动可能会被进一步放大。"
+      "text": "展望未來，市場目前處於一個微妙的關口，預期多空雙方將陷入拉鋸，短期內尚難分出勝負。多頭陣營認為市場對非農就業數據過度反應，而空頭則會指出，鑑於過去三個月的過熱行情，這將是市場轉向的初步信號。持續不斷的關稅消息與 Trump 日益激進的言論，勢必進一步加劇市場雜訊，而隨著夏季進入後段，整體交易活動減少，市場波動可能會被進一步放大。"
     },
     {
       "type": "paragraph",
-      "text": "我们预期短期内不会出现明确的方向性突破，本月价格走势也将较 7 月更为震荡。第四季度将十分关键，届时美联储会全面恢复运作，而关税与通胀的叠加效应也将开始对实体经济产生影响。在此背景下，我们认为现在是适度降低风险敞口的良机，以迎接忙碌的 9 月和年底。祝各位操作顺利，交易愉快！"
+      "text": "我們預期短期內不會出現明確的方向性突破，本月價格走勢也將較 7 月更為震盪。第四季度將十分關鍵，屆時美聯儲會全面恢復運作，而關稅與通脹的疊加效應也將開始對實體經濟產生影響。在此背景下，我們認為現在是適度降低風險敞口的良機，以迎接忙碌的 9 月和年底。祝各位操作順利，交易愉快！"
     }
   ],
   "assets": [
     {
       "asset_id": "img_74740ea292f9",
-      "filename": "250804_negative_revisions/img_74740ea292f9.png",
+      "filename": "media/250804_-_Negative_Revisions/img_74740ea292f9.png",
       "sha256": "74740ea292f9440f456879cb90dfd05914c8de6d1f1a0a91bd36ef320ed12446"
     },
     {
       "asset_id": "img_ac79747eaa30",
-      "filename": "250804_negative_revisions/img_ac79747eaa30.png",
+      "filename": "media/250804_-_Negative_Revisions/img_ac79747eaa30.png",
       "sha256": "ac79747eaa309ac371fc7723d7416868c878574bdf4d19c5b61fc3d4cb31f56f"
     },
     {
       "asset_id": "img_8ec9cb9ae6e9",
-      "filename": "250804_negative_revisions/img_8ec9cb9ae6e9.png",
+      "filename": "media/250804_-_Negative_Revisions/img_8ec9cb9ae6e9.png",
       "sha256": "8ec9cb9ae6e91e3c313ff9958dec99773ba560c454f2d7c120b85cadfdaa2450"
     },
     {
       "asset_id": "img_03a293910220",
-      "filename": "250804_negative_revisions/img_03a293910220.png",
+      "filename": "media/250804_-_Negative_Revisions/img_03a293910220.png",
       "sha256": "03a293910220e17c77c6accc06d03b7d1533596bdf140a80d012b3f7cbe8eaca"
     },
     {
       "asset_id": "img_d4ca6e3b06c4",
-      "filename": "250804_negative_revisions/img_d4ca6e3b06c4.png",
+      "filename": "media/250804_-_Negative_Revisions/img_d4ca6e3b06c4.png",
       "sha256": "d4ca6e3b06c4228faa0b9195c7702cbf8a0b0dfeba21fd7002a051472ce7bf35"
     },
     {
       "asset_id": "img_b5faf10ceb72",
-      "filename": "250804_negative_revisions/img_b5faf10ceb72.png",
+      "filename": "media/250804_-_Negative_Revisions/img_b5faf10ceb72.png",
       "sha256": "b5faf10ceb72753040fe344bbb9dc371aa6c0f894abca9a6659182ac1b2ccb67"
     },
     {
       "asset_id": "img_b6a9fd5b0797",
-      "filename": "250804_negative_revisions/img_b6a9fd5b0797.png",
+      "filename": "media/250804_-_Negative_Revisions/img_b6a9fd5b0797.png",
       "sha256": "b6a9fd5b079764e944d9fdda8acb1a248d938f322bdf2eff9c9b8274879ba816"
     },
     {
       "asset_id": "img_916b04850d01",
-      "filename": "250804_negative_revisions/img_916b04850d01.png",
+      "filename": "media/250804_-_Negative_Revisions/img_916b04850d01.png",
       "sha256": "916b04850d0150f3907b8fe24c934077eb17fab69ff0690618dbfb84dc2c8fd6"
     },
     {
       "asset_id": "img_f8dc418031b4",
-      "filename": "250804_negative_revisions/img_f8dc418031b4.png",
+      "filename": "media/250804_-_Negative_Revisions/img_f8dc418031b4.png",
       "sha256": "f8dc418031b4e6264a99237c3671ea1867637a60fdc7549ebe2c9e18d99bea0f"
     },
     {
       "asset_id": "img_308defa20ceb",
-      "filename": "250804_negative_revisions/img_308defa20ceb.png",
+      "filename": "media/250804_-_Negative_Revisions/img_308defa20ceb.png",
       "sha256": "308defa20ceb688b28ecc2a2b5775f722a1de11562831983eb70be6dd8cb540d"
     },
     {
       "asset_id": "img_9531c10ca8b1",
-      "filename": "250804_negative_revisions/img_9531c10ca8b1.png",
+      "filename": "media/250804_-_Negative_Revisions/img_9531c10ca8b1.png",
       "sha256": "9531c10ca8b16802580fe18a956f7f77ec8bbc8233b2b775b4744cddb3ea47de"
     },
     {
       "asset_id": "img_1e4a81f54c2d",
-      "filename": "250804_negative_revisions/img_1e4a81f54c2d.png",
+      "filename": "media/250804_-_Negative_Revisions/img_1e4a81f54c2d.png",
       "sha256": "1e4a81f54c2dcf9f9518fba789e4c14a4d139cee7c3b3a1704dd271ba3a6de20"
     },
     {
       "asset_id": "img_ede3812c7482",
-      "filename": "250804_negative_revisions/img_ede3812c7482.png",
+      "filename": "media/250804_-_Negative_Revisions/img_ede3812c7482.png",
       "sha256": "ede3812c7482f6bf3b18c9385bbc4560913beffdce0531758bb57cdfe9987166"
     },
     {
       "asset_id": "img_aaea9d097d0b",
-      "filename": "250804_negative_revisions/img_aaea9d097d0b.png",
+      "filename": "media/250804_-_Negative_Revisions/img_aaea9d097d0b.png",
       "sha256": "aaea9d097d0b0b61fb96d1fbadec7a7f3520a7719d815a9a92b711a433e271b4"
     },
     {
       "asset_id": "img_231d13bda64a",
-      "filename": "250804_negative_revisions/img_231d13bda64a.png",
+      "filename": "media/250804_-_Negative_Revisions/img_231d13bda64a.png",
       "sha256": "231d13bda64a309e07a429c5c4c6b6a5f949fcabf6c5179bb5c99a28089da27f"
     },
     {
       "asset_id": "img_f061deb8628d",
-      "filename": "250804_negative_revisions/img_f061deb8628d.png",
+      "filename": "media/250804_-_Negative_Revisions/img_f061deb8628d.png",
       "sha256": "f061deb8628d7c6e7a011d7b1f855b160f215c9b25a9b04d1c400d79c39db076"
     },
     {
       "asset_id": "img_ac89c7f55c68",
-      "filename": "250804_negative_revisions/img_ac89c7f55c68.png",
+      "filename": "media/250804_-_Negative_Revisions/img_ac89c7f55c68.png",
       "sha256": "ac89c7f55c68240106ce3b71a12c8ff0d28dafcd78c7dba1353957f6b233f0d8"
     },
     {
       "asset_id": "img_2b420a8a286d",
-      "filename": "250804_negative_revisions/img_2b420a8a286d.jpeg",
+      "filename": "media/250804_-_Negative_Revisions/img_2b420a8a286d.jpeg",
       "sha256": "2b420a8a286d20cf30ab72d08966a3cbc02ccbef4b8e593c22c2224e9b54e8c1"
     },
     {
       "asset_id": "img_8b986c28105e",
-      "filename": "250804_negative_revisions/img_8b986c28105e.png",
+      "filename": "media/250804_-_Negative_Revisions/img_8b986c28105e.png",
       "sha256": "8b986c28105eeefbd78bd2badbdb2d533fc5de446a2be36b2012d2a66f130e4e"
     },
     {
       "asset_id": "img_5b0997e0456d",
-      "filename": "250804_negative_revisions/img_5b0997e0456d.png",
+      "filename": "media/250804_-_Negative_Revisions/img_5b0997e0456d.png",
       "sha256": "5b0997e0456d7ca46b3c5253da1579716fa508d49b6e7033e3e5fa4c1015fbba"
     },
     {
       "asset_id": "img_180933dec0c2",
-      "filename": "250804_negative_revisions/img_180933dec0c2.png",
+      "filename": "media/250804_-_Negative_Revisions/img_180933dec0c2.png",
       "sha256": "180933dec0c2dc4b60aa56d4f494f94e45b6d407abad9bdb46843b351d865730"
     },
     {
       "asset_id": "img_c95dc26a9e58",
-      "filename": "250804_negative_revisions/img_c95dc26a9e58.png",
+      "filename": "media/250804_-_Negative_Revisions/img_c95dc26a9e58.png",
       "sha256": "c95dc26a9e5848f8bd58e4dab4f37622c394394bba4c6765125f8166bc83a60b"
     },
     {
       "asset_id": "img_5e4e9c09229a",
-      "filename": "250804_negative_revisions/img_5e4e9c09229a.png",
+      "filename": "media/250804_-_Negative_Revisions/img_5e4e9c09229a.png",
       "sha256": "5e4e9c09229a68f2712445e10ccf0098e22663aa13c45d716f0197b5bcf75ccf"
     },
     {
       "asset_id": "img_3bfc2fb1da76",
-      "filename": "250804_negative_revisions/img_3bfc2fb1da76.jpeg",
+      "filename": "media/250804_-_Negative_Revisions/img_3bfc2fb1da76.jpeg",
       "sha256": "3bfc2fb1da763cb2e141ac8535591215c78f3dfa017c96860599531580c57159"
     },
     {
       "asset_id": "img_b88b3366afae",
-      "filename": "250804_negative_revisions/img_b88b3366afae.png",
+      "filename": "media/250804_-_Negative_Revisions/img_b88b3366afae.png",
       "sha256": "b88b3366afae44e4387ffe2e2740495c7eb3cfbbe61cbf54cf8135756ec0beab"
     }
   ],
