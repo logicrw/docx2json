@@ -1,0 +1,582 @@
+{
+  "doc": {
+    "title": "Up-Only",
+    "date": "2025-09-15",
+    "locale": "en-US",
+    "version": "v1",
+    "source_file": "250915 - Up-Only.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_6e5509b164c6"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Last week was an interesting week which saw equities and fixed income markets go on in their respective ways, with the former melting up all week to new ATHs while the latter craters to near cycle lows in yields on subdued economic data."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_e3bd191fb308"
+      },
+      "title": "Is the Glass Half Full or Empty?  Or Perhaps Both?",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_18a431c3007b"
+      },
+      "title": null,
+      "credit": "Bloomberg, Citi",
+      "credit_tokens": [
+        "Bloomberg",
+        "Citi"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "After the soft NFP, U-Mich confidence was the latest soft data to disappoint, giving bonds the green light to price in 6 cuts over this year and next.  The 10y yield fell below 4% for the first time since April, while the 5y came within a few basis points of the YTD lows on the back of the weakest initial claims release in nearly 4 years.  The week's treasury bond auctions were universally well received as investors have fully bought-back into the easing cycle."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f469336a0abf"
+      },
+      "title": "Pricings Pricing in 6 Further Cuts Into 2026",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_879f83ac3cb5"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "The FOMC is widely expected to restart the rate cut cycle just as core inflation is threatening to pick up as tariff-related pressures are starting to filter in, as Core CPI hit the highest MoM print since January at 0.346%."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c1b804172557"
+      },
+      "title": "Core CPI Remains Sticky on a Month-on-Month Basis with U-Mich Long-Term Inflation Expectations Reversing Higher as Well",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_451b92d182ad"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "However, the Fed has so far chosen to focus on the slowing labour market internals, cemented by the recent BLS benchmark revision which showed a much bigger downward adjustment than expected (-911k vs consensus of 700k)."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d6b0eb57f100"
+      },
+      "title": "Labour Market Internals are Slowing Undeniably",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_be576748acdb"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "Flipping the narrative on its head, equities are (as usual) painting a wholly different picture, with the SPX hitting 3 new record closes on the week, and over half of the index trading at above its 100d MA.  Blowout Oracle forecasts revived the faltering AI sentiment this week, but the entire index saw solid gains across sectors with semis (+6%), banks (+3%), utilities (+3%) and software (+3%) enjoying a wonderful week."
+    },
+    {
+      "type": "paragraph",
+      "text": "For those keeping track, the SPX has now rallied >30% off its April lows to produce one of the strongest 5-month rallies over the past 50 years."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9348b725822a"
+      },
+      "title": "Unlike the Doom & Gloom in Rates, Equity Markets are Showing No Macro Slowdown Whatsoever with Price Momentum Making a Huge Rebound in Sep",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_dc4257b01567"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d4c22a2eff4e"
+      },
+      "title": "US GDP Also Came in Much Stronger Than Early Feared at 2.5%... Will Q4 Also Surprise to the Upside as Well?",
+      "credit": "JPM",
+      "credit_tokens": [
+        "JPM"
+      ],
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Underlying market internals are remarkably strong as well, with implied volatilities crashing to new interim lows across all major macro asset classes, led by treasuries."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_10e48c9f07d4"
+      },
+      "title": "Cross Asset Vol (Including Crypto) Collapsed Last Week as All Risk Signals Went Green",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_73669f44362c"
+      },
+      "title": null,
+      "credit": "Bloomberg, SignalPlus",
+      "credit_tokens": [
+        "Bloomberg",
+        "SignalPlus"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "SPX options volume was 20%+ above 12m averages with retail activity coming in at ~12% of total volume as reported by sell-side dealers."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_b1c1c72b6827"
+      },
+      "title": "Option Activity was Extremely Active with Volumes Coming in Well Above Trend",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3def4d53e7e4"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_bff3f5490c1a"
+      },
+      "title": "Retail Activity has Remained Strong Throughout This Entire Rally",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Equity exposure has increased across the board, with US households being the primary owners of US stocks at this point, and have profited handsomely from the up-hold equity move."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_da882928b8ee"
+      },
+      "title": "Who's the 'Smart Money' Again?  US Households have Increased Their Dominant Ownership of US Stocks",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_944b2ede5d10"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "Stepping away from the US, global sentiment has also bubbled up with Hang Seng climbing to 4-year highs and Taiwan reaching new ATHs on multiple weeks.  Gold has been the best performer MTD with macro HFs not far behind, but it's really been an across the board rally across all risk assets no matter how you slice it."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c90c2abb5323"
+      },
+      "title": "Up Up Up - Almost Every Asset Melted-Higher in September",
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "As if things weren't frothy enough, corporate buybacks are taking place at a neck-breaking pace with YTD buybacks coming in at ~$1.4T over the first eight months of the year, already good for a new record.  That's on pace for a 38% YoY growth vs 2024, which was already a fresh record of its own.  Absolutely scorching."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_97bf0355254e"
+      },
+      "title": "Corporate Buybacks are Coming in at a Furious Pace, On Pace for a ~40% Gains YoY Versus Last Year's Record",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Looking ahead, the focus will be on the FOMC, though traders are not expecting a lot of surprise as the Fed is widely anticipated to be overwhelmingly supportive of risk sentiment post their Jacksole Hole meeting.  Equity options imply a ~72bp move on the meeting date, vs an average of 84bp as per Citi estimates.  Markets will likely have to look elsewhere to find their hawkish surprises."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_eeb6043b7761"
+      },
+      "title": "Markets are Not Expecting a Lot of Surprise Out of This Week's FOMC, as the Fed has Already Expressed Its Dovish Inclinations",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0014",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_b8dcb81d6c2f"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0014",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "Crypto rebounded over the past week and BTC retraced its $110k-116k price gap, with profit takers still seen capping the upside as overall buying momentum has slowed.  BTC ETF inflows rebounded significantly last week (~2.3B) following about 1.5 months of muted interest, while ETH inflow momentum has slowed remarkably since the late summer FOMO."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9009905424b3"
+      },
+      "title": "BTC ETFs Inflows Recovered Last Week After a Slow 1.5 Months",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0015",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3b121e3e0b0c"
+      },
+      "title": null,
+      "credit": "SoSoValue",
+      "credit_tokens": [
+        "SoSoValue"
+      ],
+      "group_id": "grp_0015",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "On the disappointing side, the SPX 500 rejected MicroStrategy from index inclusion last week, even though the stock had technically met all of the inclusion criteria.  This suggests that the selection committee does have the latitude to apply discretion in the selection process, and are rejecting DATs from being considered as an index member."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is mostly definitely a blow to near-term treasury momentum as the sustainability of the business model is being brought into question, with MSTR and the overall DAT complex has underperformed BTC with a shrinking NAV premium (or in many cases, a growing discount).  We expect this to continue in the near term as investors refocus back on crypto companies or miners with an actual operating business, and hope the weakening momentum will not proliferate into any downside convexity accidents."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_aa7f291d8938"
+      },
+      "title": "MSTR and DATs have Underperformed BTC with Shrinking NAV Premium",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0016",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_8daf4db82f3c"
+      },
+      "title": null,
+      "credit": "JPM, Blockworks",
+      "credit_tokens": [
+        "JPM",
+        "Blockworks"
+      ],
+      "group_id": "grp_0016",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the meantime, strong macro sentiment should continue to backstop crypto prices, though we expect them to underperform the overall equity and risk complex in the short-run.  Good luck & good trading into FOMC!"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_6e5509b164c6",
+      "filename": "250915/img_6e5509b164c6.png",
+      "sha256": "6e5509b164c68a4994b34fc07571de48358b053479b4d19b36af0386184b57ff"
+    },
+    {
+      "asset_id": "img_e3bd191fb308",
+      "filename": "250915/img_e3bd191fb308.png",
+      "sha256": "e3bd191fb3088d65249d33a3d9d1db2c50f2ad4df43bb798fc79320fa44c0cda"
+    },
+    {
+      "asset_id": "img_18a431c3007b",
+      "filename": "250915/img_18a431c3007b.png",
+      "sha256": "18a431c3007b4a8bf33165d84356ffb3a56309edc1dc9901f78efb03b8bcf947"
+    },
+    {
+      "asset_id": "img_f469336a0abf",
+      "filename": "250915/img_f469336a0abf.png",
+      "sha256": "f469336a0abf6e61c8d50e783bf9733517ee5a95e6dc57b5a1478bc511c6780a"
+    },
+    {
+      "asset_id": "img_879f83ac3cb5",
+      "filename": "250915/img_879f83ac3cb5.png",
+      "sha256": "879f83ac3cb5b30078c08340288a9a3772466c3011c604273a163feee984f70c"
+    },
+    {
+      "asset_id": "img_c1b804172557",
+      "filename": "250915/img_c1b804172557.png",
+      "sha256": "c1b80417255766fbd0351cebbea7ee428cf31991bb80c62b7fe1cdaeb411af09"
+    },
+    {
+      "asset_id": "img_451b92d182ad",
+      "filename": "250915/img_451b92d182ad.png",
+      "sha256": "451b92d182ad127f738d7e88245507c83423c882a0d9017c9d3c1e9064ff92b7"
+    },
+    {
+      "asset_id": "img_d6b0eb57f100",
+      "filename": "250915/img_d6b0eb57f100.png",
+      "sha256": "d6b0eb57f100cce1a304270edd0193fd7c7d1c0b3a7de9da54f72f1eb01257cb"
+    },
+    {
+      "asset_id": "img_be576748acdb",
+      "filename": "250915/img_be576748acdb.png",
+      "sha256": "be576748acdb273b7e6d0dd7ccbf6fa8a1eaf1fc9438c0dcdf89fdcfd8ea8dae"
+    },
+    {
+      "asset_id": "img_9348b725822a",
+      "filename": "250915/img_9348b725822a.png",
+      "sha256": "9348b725822abc1d33da2d82c56d0bdffc84771e43a05bfee298cad10e5f0621"
+    },
+    {
+      "asset_id": "img_dc4257b01567",
+      "filename": "250915/img_dc4257b01567.png",
+      "sha256": "dc4257b0156799b59b4b0bd299f3e699ac1c5bdce23ab56dd6f64da223a26d80"
+    },
+    {
+      "asset_id": "img_d4c22a2eff4e",
+      "filename": "250915/img_d4c22a2eff4e.png",
+      "sha256": "d4c22a2eff4e3cbdb8f845d49f8a27de6778a6414ba85662df9fde993c4a6086"
+    },
+    {
+      "asset_id": "img_10e48c9f07d4",
+      "filename": "250915/img_10e48c9f07d4.png",
+      "sha256": "10e48c9f07d4ef6f7660d5259bd5d457f6706b75584055a9e138fb7b0229bab3"
+    },
+    {
+      "asset_id": "img_73669f44362c",
+      "filename": "250915/img_73669f44362c.png",
+      "sha256": "73669f44362cf815bc731c5a5fc7c20ee848f65cf599fa786e2e74fde33440eb"
+    },
+    {
+      "asset_id": "img_b1c1c72b6827",
+      "filename": "250915/img_b1c1c72b6827.png",
+      "sha256": "b1c1c72b682749d01ebbcfec2d78dccf3feb60e40d78980356e78c21622a2d75"
+    },
+    {
+      "asset_id": "img_3def4d53e7e4",
+      "filename": "250915/img_3def4d53e7e4.png",
+      "sha256": "3def4d53e7e4acbf1f82279e46496534c07e18e7c24fcd8c61d182cd2dfebacf"
+    },
+    {
+      "asset_id": "img_bff3f5490c1a",
+      "filename": "250915/img_bff3f5490c1a.png",
+      "sha256": "bff3f5490c1abef494f5b95a1e1e01b51313e7eb00886fbfc177a7de3f284374"
+    },
+    {
+      "asset_id": "img_da882928b8ee",
+      "filename": "250915/img_da882928b8ee.png",
+      "sha256": "da882928b8eec2b40760fb10cadee36fbb46884302439af209dfc3b99b0e5548"
+    },
+    {
+      "asset_id": "img_944b2ede5d10",
+      "filename": "250915/img_944b2ede5d10.png",
+      "sha256": "944b2ede5d10a0814217d7bbff4b86465ec014531ddfe0991b7cbe7121945862"
+    },
+    {
+      "asset_id": "img_c90c2abb5323",
+      "filename": "250915/img_c90c2abb5323.png",
+      "sha256": "c90c2abb53234091ed8c370a765ed7269c8c686fef6d9a71113474659f8eef33"
+    },
+    {
+      "asset_id": "img_97bf0355254e",
+      "filename": "250915/img_97bf0355254e.png",
+      "sha256": "97bf0355254e239d50181663c900258f14a06de35347cdab36172b0e7d30d611"
+    },
+    {
+      "asset_id": "img_eeb6043b7761",
+      "filename": "250915/img_eeb6043b7761.png",
+      "sha256": "eeb6043b77612ce76ff6d689d2243ca6939c28d7c8b68aa8095f85920ce28ecf"
+    },
+    {
+      "asset_id": "img_b8dcb81d6c2f",
+      "filename": "250915/img_b8dcb81d6c2f.png",
+      "sha256": "b8dcb81d6c2fc65343039d64ed03fbc0e6ee01467fca2b74d0a35f05d279417b"
+    },
+    {
+      "asset_id": "img_9009905424b3",
+      "filename": "250915/img_9009905424b3.png",
+      "sha256": "9009905424b33507fa0a73333468687b06edf70c05f3e8237eb1af9a86ed94f6"
+    },
+    {
+      "asset_id": "img_3b121e3e0b0c",
+      "filename": "250915/img_3b121e3e0b0c.png",
+      "sha256": "3b121e3e0b0c596f23d907c2bb96925d9436dfa0fbb03cffba7a1dbccd4d2684"
+    },
+    {
+      "asset_id": "img_aa7f291d8938",
+      "filename": "250915/img_aa7f291d8938.png",
+      "sha256": "aa7f291d8938b9d96ab4d01b09256facad8b8580a32eace990fa682417096cd1"
+    },
+    {
+      "asset_id": "img_8daf4db82f3c",
+      "filename": "250915/img_8daf4db82f3c.png",
+      "sha256": "8daf4db82f3c1df0de8369d21064dcbcc79eb5116c920321f09c536e59e70b18"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}

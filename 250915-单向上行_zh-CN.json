@@ -1,0 +1,582 @@
+{
+  "doc": {
+    "title": "单向上行",
+    "date": "2025-09-15",
+    "locale": "zh-CN",
+    "version": "v1",
+    "source_file": "250915 - 單向上行.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_6e5509b164c6"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "上周是引人注目的一周，股市与固定收益市场各自演绎不同走势——前者全周持续攀升至历史新高，后者则因经济资料疲软导致收益率跌至周期低位附近。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_e3bd191fb308"
+      },
+      "title": "半杯水满还是半杯空？或许兼而有之？",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_18a431c3007b"
+      },
+      "title": null,
+      "credit": "彭博, 花旗集团",
+      "credit_tokens": [
+        "彭博",
+        "花旗集团"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "继非农就业资料疲软后，密西根大学消费者信心指数成为最新令人失望的软资料，为债券市场定价今年及明年共六次降息铺平道路。10年期收益率自4月以来首次跌破4%，5年期收益率因初请失业金人数创近四年新低而逼近年内低点。本周国债拍卖全面获得热烈响应，投资者已全面回归宽松周期交易。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f469336a0abf"
+      },
+      "title": "市场定价显示2026年前还将迎来六次降息",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_879f83ac3cb5"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "尽管核心CPI环比涨幅达0.346%创1月以来新高，关税相关压力开始渗透可能推升核心通胀，市场仍普遍预期FOMC将重启降息周期。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c1b804172557"
+      },
+      "title": "核心CPI环比保持粘性，密西根大学长期通胀预期亦反转上行",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_451b92d182ad"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "但美联储选择聚焦劳动力市场内部放缓迹象，近期劳工统计局基准修订显示下调幅度远超预期（-91.1万vs预期-70万），进一步强化了这一趋势。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d6b0eb57f100"
+      },
+      "title": "劳动力市场内部放缓已成不争事实",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_be576748acdb"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "与之形成鲜明对比的是，股市（照常）描绘出完全不同图景：标普500指数本周三次刷新收盘纪录，过半成分股交易于100日均线上方。甲骨文惊艳财报重振受挫的AI情绪，各板块全线飘红——半导体（+6%）、银行（+3%）、公用事业（+3%）和软体（+3%）均表现亮眼。"
+    },
+    {
+      "type": "paragraph",
+      "text": "值得关注的是，标普500指数自4月低点已反弹超30%，创下过去50年最强劲的五个月涨幅之一。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9348b725822a"
+      },
+      "title": "与利率市场悲观情绪不同，股市未显任何宏观放缓迹象，价格动能于9月强势回归",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_dc4257b01567"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d4c22a2eff4e"
+      },
+      "title": "美国GDP亦超预期增长2.5%……四季度会再度意外上行吗？",
+      "credit": "摩根大通",
+      "credit_tokens": [
+        "摩根大通"
+      ],
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "市场内在结构同样强劲，所有主要宏观资产类别隐含波动率均跌至阶段性新低，国债领跌。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_10e48c9f07d4"
+      },
+      "title": "跨资产波动率（含加密货币）上周全面崩溃，风险信号悉数转绿",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_73669f44362c"
+      },
+      "title": null,
+      "credit": "彭博, SignalPlus",
+      "credit_tokens": [
+        "彭博",
+        "SignalPlus"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "标普500期权成交量较12个月均值高出20%以上，卖方经销商资料显示散户交易量占比约12%。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_b1c1c72b6827"
+      },
+      "title": "期权市场极度活跃，成交量远超趋势水准",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3def4d53e7e4"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_bff3f5490c1a"
+      },
+      "title": "本轮反弹中散户参与度持续强劲",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "股票持仓全面增加，美国家庭已成为美股主要持有者，并从本轮上涨中获利颇丰。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_da882928b8ee"
+      },
+      "title": "谁才是\"聪明钱\"？美国家庭持续扩大美股主导性持仓",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_944b2ede5d10"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "全球市场情绪同样升温，恒生指数攀升至四年高位，台湾加权指数连续数周创历史新高。黄金成为本月迄今表现最佳资产，宏观对冲基金紧随其后，无论从何种维度审视，所有风险资产确实呈现普涨格局。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c90c2abb5323"
+      },
+      "title": "全线攀升——九月几乎所有资产价格腾飞",
+      "credit": "花旗集团",
+      "credit_tokens": [
+        "花旗集团"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "狂热氛围中，企业回购正以惊人速度推进：前八个月回购规模达1.4万亿美元，已刷新历史纪录。较2024年同期增长38%（当年本身已创纪录），涨势堪称烈火烹油。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_97bf0355254e"
+      },
+      "title": "企业回购如火如荼，同比增速较去年纪录水准高出约40%",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "展望后市，焦点将转向FOMC会议。但由于市场普遍预期美联储在杰克逊霍尔会议后将持续支援风险情绪，交易员预计会议难现意外。花旗资料显示股权期权隐含会议日波动幅度约72基点，低于84基点的历史均值。市场可能需要从其他领域寻找鹰派意外。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_eeb6043b7761"
+      },
+      "title": "市场对本周FOMC会议预期平稳，美联储已明确鸽派倾向",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0014",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_b8dcb81d6c2f"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0014",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "加密货币过去一周反弹，比特币回补11-11.6万美元价格缺口，但获利了结盘仍压制上行空间，整体买盘动能放缓。BTC ETF在经历1.5个月资金流入低迷后上周大幅回升（约23亿美元），而ETH流入动能自夏末FOMO情绪后显著减速。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9009905424b3"
+      },
+      "title": "BTC ETF资金流入在经过1.5个月低迷后复苏",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0015",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3b121e3e0b0c"
+      },
+      "title": null,
+      "credit": "SosoValue",
+      "credit_tokens": [
+        "SosoValue"
+      ],
+      "group_id": "grp_0015",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "令人失望的是，标普500指数上周拒绝将MicroStrategy纳入成分股，尽管其技术上符合所有准入标准。这表明遴选委员会确实拥有自由裁量权，并拒绝将数字资产信托（DAT）纳入指数。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这对短期国债动能无疑是打击——其商业模式可持续性正受质疑，MSTR及整个DAT板块表现逊于BTC，资产净值溢价持续收缩（多数情况下折价扩大）。预计短期内该趋势将持续，投资者将重新关注实际运营业务的加密公司或矿企，希望疲弱动能不会引发下行凸性风险。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_aa7f291d8938"
+      },
+      "title": "MSTR及DAT表现逊于BTC，资产净值溢价持续收缩",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0016",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_8daf4db82f3c"
+      },
+      "title": null,
+      "credit": "摩根大通, Blockworks",
+      "credit_tokens": [
+        "摩根大通",
+        "Blockworks"
+      ],
+      "group_id": "grp_0016",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "当前强劲的宏观情绪应继续支撑加密价格，但预计短期表现将逊于整体股票及风险资产。祝FOMC会议期间交易顺利！"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_6e5509b164c6",
+      "filename": "250915/img_6e5509b164c6.png",
+      "sha256": "6e5509b164c68a4994b34fc07571de48358b053479b4d19b36af0386184b57ff"
+    },
+    {
+      "asset_id": "img_e3bd191fb308",
+      "filename": "250915/img_e3bd191fb308.png",
+      "sha256": "e3bd191fb3088d65249d33a3d9d1db2c50f2ad4df43bb798fc79320fa44c0cda"
+    },
+    {
+      "asset_id": "img_18a431c3007b",
+      "filename": "250915/img_18a431c3007b.png",
+      "sha256": "18a431c3007b4a8bf33165d84356ffb3a56309edc1dc9901f78efb03b8bcf947"
+    },
+    {
+      "asset_id": "img_f469336a0abf",
+      "filename": "250915/img_f469336a0abf.png",
+      "sha256": "f469336a0abf6e61c8d50e783bf9733517ee5a95e6dc57b5a1478bc511c6780a"
+    },
+    {
+      "asset_id": "img_879f83ac3cb5",
+      "filename": "250915/img_879f83ac3cb5.png",
+      "sha256": "879f83ac3cb5b30078c08340288a9a3772466c3011c604273a163feee984f70c"
+    },
+    {
+      "asset_id": "img_c1b804172557",
+      "filename": "250915/img_c1b804172557.png",
+      "sha256": "c1b80417255766fbd0351cebbea7ee428cf31991bb80c62b7fe1cdaeb411af09"
+    },
+    {
+      "asset_id": "img_451b92d182ad",
+      "filename": "250915/img_451b92d182ad.png",
+      "sha256": "451b92d182ad127f738d7e88245507c83423c882a0d9017c9d3c1e9064ff92b7"
+    },
+    {
+      "asset_id": "img_d6b0eb57f100",
+      "filename": "250915/img_d6b0eb57f100.png",
+      "sha256": "d6b0eb57f100cce1a304270edd0193fd7c7d1c0b3a7de9da54f72f1eb01257cb"
+    },
+    {
+      "asset_id": "img_be576748acdb",
+      "filename": "250915/img_be576748acdb.png",
+      "sha256": "be576748acdb273b7e6d0dd7ccbf6fa8a1eaf1fc9438c0dcdf89fdcfd8ea8dae"
+    },
+    {
+      "asset_id": "img_9348b725822a",
+      "filename": "250915/img_9348b725822a.png",
+      "sha256": "9348b725822abc1d33da2d82c56d0bdffc84771e43a05bfee298cad10e5f0621"
+    },
+    {
+      "asset_id": "img_dc4257b01567",
+      "filename": "250915/img_dc4257b01567.png",
+      "sha256": "dc4257b0156799b59b4b0bd299f3e699ac1c5bdce23ab56dd6f64da223a26d80"
+    },
+    {
+      "asset_id": "img_d4c22a2eff4e",
+      "filename": "250915/img_d4c22a2eff4e.png",
+      "sha256": "d4c22a2eff4e3cbdb8f845d49f8a27de6778a6414ba85662df9fde993c4a6086"
+    },
+    {
+      "asset_id": "img_10e48c9f07d4",
+      "filename": "250915/img_10e48c9f07d4.png",
+      "sha256": "10e48c9f07d4ef6f7660d5259bd5d457f6706b75584055a9e138fb7b0229bab3"
+    },
+    {
+      "asset_id": "img_73669f44362c",
+      "filename": "250915/img_73669f44362c.png",
+      "sha256": "73669f44362cf815bc731c5a5fc7c20ee848f65cf599fa786e2e74fde33440eb"
+    },
+    {
+      "asset_id": "img_b1c1c72b6827",
+      "filename": "250915/img_b1c1c72b6827.png",
+      "sha256": "b1c1c72b682749d01ebbcfec2d78dccf3feb60e40d78980356e78c21622a2d75"
+    },
+    {
+      "asset_id": "img_3def4d53e7e4",
+      "filename": "250915/img_3def4d53e7e4.png",
+      "sha256": "3def4d53e7e4acbf1f82279e46496534c07e18e7c24fcd8c61d182cd2dfebacf"
+    },
+    {
+      "asset_id": "img_bff3f5490c1a",
+      "filename": "250915/img_bff3f5490c1a.png",
+      "sha256": "bff3f5490c1abef494f5b95a1e1e01b51313e7eb00886fbfc177a7de3f284374"
+    },
+    {
+      "asset_id": "img_da882928b8ee",
+      "filename": "250915/img_da882928b8ee.png",
+      "sha256": "da882928b8eec2b40760fb10cadee36fbb46884302439af209dfc3b99b0e5548"
+    },
+    {
+      "asset_id": "img_944b2ede5d10",
+      "filename": "250915/img_944b2ede5d10.png",
+      "sha256": "944b2ede5d10a0814217d7bbff4b86465ec014531ddfe0991b7cbe7121945862"
+    },
+    {
+      "asset_id": "img_c90c2abb5323",
+      "filename": "250915/img_c90c2abb5323.png",
+      "sha256": "c90c2abb53234091ed8c370a765ed7269c8c686fef6d9a71113474659f8eef33"
+    },
+    {
+      "asset_id": "img_97bf0355254e",
+      "filename": "250915/img_97bf0355254e.png",
+      "sha256": "97bf0355254e239d50181663c900258f14a06de35347cdab36172b0e7d30d611"
+    },
+    {
+      "asset_id": "img_eeb6043b7761",
+      "filename": "250915/img_eeb6043b7761.png",
+      "sha256": "eeb6043b77612ce76ff6d689d2243ca6939c28d7c8b68aa8095f85920ce28ecf"
+    },
+    {
+      "asset_id": "img_b8dcb81d6c2f",
+      "filename": "250915/img_b8dcb81d6c2f.png",
+      "sha256": "b8dcb81d6c2fc65343039d64ed03fbc0e6ee01467fca2b74d0a35f05d279417b"
+    },
+    {
+      "asset_id": "img_9009905424b3",
+      "filename": "250915/img_9009905424b3.png",
+      "sha256": "9009905424b33507fa0a73333468687b06edf70c05f3e8237eb1af9a86ed94f6"
+    },
+    {
+      "asset_id": "img_3b121e3e0b0c",
+      "filename": "250915/img_3b121e3e0b0c.png",
+      "sha256": "3b121e3e0b0c596f23d907c2bb96925d9436dfa0fbb03cffba7a1dbccd4d2684"
+    },
+    {
+      "asset_id": "img_aa7f291d8938",
+      "filename": "250915/img_aa7f291d8938.png",
+      "sha256": "aa7f291d8938b9d96ab4d01b09256facad8b8580a32eace990fa682417096cd1"
+    },
+    {
+      "asset_id": "img_8daf4db82f3c",
+      "filename": "250915/img_8daf4db82f3c.png",
+      "sha256": "8daf4db82f3c1df0de8369d21064dcbcc79eb5116c920321f09c536e59e70b18"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}
