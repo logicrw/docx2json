@@ -1,0 +1,423 @@
+{
+  "doc": {
+    "title": "季度末",
+    "date": "2025-09-29",
+    "locale": "zh-HK",
+    "version": "v1",
+    "source_file": "250929 - 季度末.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7423a7a64012"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "政府會停擺嗎？是的，特朗普表示，“因為民主黨人瘋了。”為何白宮尋求對聯邦工作人員進行大規模解雇，而不僅僅是強制休假？特朗普回應稱：“嗯，這都是民主黨人造成的。”"
+    },
+    {
+      "type": "paragraph",
+      "text": "“如果必須停擺，那就只能停擺，”特朗普週五表示。“但他們是導致政府停擺的一方。”"
+    },
+    {
+      "type": "paragraph",
+      "text": "美國（半）年度的債務上限鬧劇再次上演，在週二9月30日的最後期限之前，為避免可能的政府停擺未能取得任何進展。截至本文撰寫時，特朗普總統剛剛同意與國會最高領導人在週一進行最後一刻的會談，醫療保健資金仍然是關鍵的分歧點。"
+    },
+    {
+      "type": "paragraph",
+      "text": "即便在最壞的情況下，債務融資中斷也不太可能發生，但任何政府關門都可能導致本週五的非農就業資料包告延遲發佈——如果勞工統計局暫時停止運作的話。這將使市場在美聯儲10月會議前失去一項關鍵的經濟資料，從而在此期間給任何美聯儲的講話帶來更大的關注度和波動性。"
+    },
+    {
+      "type": "paragraph",
+      "text": "假設勞工統計局能保持運作，預計9月份非農就業人數將略高於10萬人，失業率約為4.3%。亞洲市場可能會表現平淡，因為中國即將進入黃金周假期，而季度末的投資組合再平衡流動可能會在周中前後增加一些波動性。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_25e80450bb98"
+      },
+      "title": "政府機構能否維持運作，確保本週五的非農資料如期發佈？",
+      "credit": "WSJ",
+      "credit_tokens": [
+        "WSJ"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "除了華盛頓的邊緣政策，隨著第三季度以又一個非常強勁的季度表現接近尾聲，上周市場表現平靜。華爾街報導稱，“普通”宏觀類資產的平均回報率約為2.5%，其中黃金領漲（約14%）。全球股市再次全線上漲，無論是發達市場還是新興市場均表現強勁，而全球利率則因各國央行全面轉向鴿派基調而有所下降。"
+    },
+    {
+      "type": "paragraph",
+      "text": "本季度的另一個主要主題是隱含波動率的下降，這體現在股票、利率、外匯甚至比特幣等各個領域。這主要是由於實際波動率因美聯儲的寬鬆政策、全球GDP的穩定、CPI讀數中缺乏顯著的關稅傳導效應以及地緣政治和關稅意外趨緩而大幅下降。"
+    },
+    {
+      "type": "paragraph",
+      "text": "波動率的降低直接導致了股票估值上升和信用利差收窄，這對於那些可能錯過了風險資產上漲行情的人來說，是一個不便的現實。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f385c4105d48"
+      },
+      "title": "波動率急劇下降是2025年全年的主要主題，並在第三季度得以延續",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_de468a1770f8"
+      },
+      "title": null,
+      "credit": "Citi, SignalPlus",
+      "credit_tokens": [
+        "Citi",
+        "SignalPlus"
+      ],
+      "group_id": "grp_0003",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_20f73bcd073d"
+      },
+      "title": "全球GDP大體保持穩定，採購經理人指數仍處於擴張區間",
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "隨著美國財政年度在9月底結束，根據花旗研究，實際財政赤字實際上這次大致與國會預算辦公室的估計相符（19900億美元 vs 19780億美元）。這實際上意味著赤字比2024年減少了3100億美元，並且是自2021年以來最低的絕對赤字水準。雖然其長期影響尚無定論，但美國的關稅政策顯著改善了財政狀況，預計在過去十年中帶來了3萬億美元的收入，有助於降低未來兩年的預期赤字。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2b657a608c0a"
+      },
+      "title": "有爭議的關稅政策幫助美國財政赤字降至2021年以來的最低水準",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9986e878b62e"
+      },
+      "title": null,
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "作為回應，美元經歷了自仲夏以來最強勁的周度表現之一，這得益於有韌性的美國資料和過去一周前端收益率的急劇重新定價。美元持續的淨空頭持倉可能會將這種擠壓行情進一步推入第四季度，特別是如果美聯儲的鴿派言論哪怕只是溫和減弱，或者萬一股市出現下跌，可能引發避險資金流入。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9a2b88c178e1"
+      },
+      "title": "上周，受前端收益率反彈和穩健資料推動，美元大幅走高",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_11eaf88ea0e6"
+      },
+      "title": null,
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0006",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "加密貨幣上周的情況則遠沒有那麼樂觀，該行業市值因一系列大型山寨幣的快速去杠杆化而損失了3000億美元（ETH -10%，Solana -13%）。上週一單日清算金額超過30億美元，導致BTC和ETH ETF分別出現近10億美元的周度資金流出。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_75d265f2c0ef"
+      },
+      "title": "加密貨幣上周經歷了最糟糕的單周表現之一",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_fc77b7336983"
+      },
+      "title": null,
+      "credit": "Messari, Bloomberg",
+      "credit_tokens": [
+        "Messari",
+        "Bloomberg"
+      ],
+      "group_id": "grp_0007",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_bed154bda82e"
+      },
+      "title": "上週一期貨多頭清算額達到30億美元，是過去幾年中最糟糕的單日表現之一",
+      "credit": "Coinglass",
+      "credit_tokens": [
+        "Coinglass"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ab6d5c9b3b47"
+      },
+      "title": "現貨市場的拋售觸發了BTC和ETH ETF雙雙出現近10億美元的周度資金流出",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ad490e4b031c"
+      },
+      "title": null,
+      "credit": "SosoValue",
+      "credit_tokens": [
+        "SosoValue"
+      ],
+      "group_id": "grp_0009",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ccccf80ad996"
+      },
+      "title": "加密貨幣DAT估值溢價持續萎縮至接近零（或出現折價）",
+      "credit": "Blockworks",
+      "credit_tokens": [
+        "Blockworks"
+      ],
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "有趣的是，比特幣的隱含波動率仍然很低，因為市場仍未尋求任何下行保護，這可能是由於僅做多的DAT持有者持續佔據主導地位。鑒於乙太坊實際波動較大，其波動率已經上升，導致其對比特幣的波動率差距達到自2019年以來的最高水準。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c4b96d71e61a"
+      },
+      "title": "ETH-BTC波動率差達到自2019年以來的最大差距",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "儘管價格出現拋售，但加密貨幣的基本背景依然積極。據報導，Tether正在與一組戰略投資者（包括Ark）進行談判，擬以5000億美元的估值籌集約200億美元資金；而Kraken在剛剛結束最近一輪融資後，據稱又在以200億美元的估值進行新一輪融資。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d6c7e483183e"
+      },
+      "title": "Tether正通過引入傳統投資者，繼續其邁向主流的道路",
+      "credit": "CNBC",
+      "credit_tokens": [
+        "CNBC"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "我們的偏向與過去一周相似，即鑒於極端的估值和具有挑戰性的季節性因素，傾向於採取更具防禦性的姿態。美國股票ETF的持倉量已飆升至2022年以來的高位，似乎所有關於經濟的利好消息、溫和的通脹以及鴿派的美聯儲都已被市場定價。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不過，一如既往，請做好自己的研究，並祝該地區的各位假期愉快！祝你好運，交易順利。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_e25067c2eedc"
+      },
+      "title": "這就是FOMO的樣子，再次上演...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_7423a7a64012",
+      "filename": "250929/img_7423a7a64012.png",
+      "sha256": "7423a7a64012cf87f9fcc3e65d3df84e45a5f3bf3392d1f8015acf605e658cba"
+    },
+    {
+      "asset_id": "img_25e80450bb98",
+      "filename": "250929/img_25e80450bb98.png",
+      "sha256": "25e80450bb98645999ebc031179a5555c5bd86032b0e8e7843dce30584081d59"
+    },
+    {
+      "asset_id": "img_f385c4105d48",
+      "filename": "250929/img_f385c4105d48.png",
+      "sha256": "f385c4105d481e6e9ef975417e6e5923178efca9f44aa00b922653c33d9b0667"
+    },
+    {
+      "asset_id": "img_de468a1770f8",
+      "filename": "250929/img_de468a1770f8.png",
+      "sha256": "de468a1770f87ea5c137e7732700a473266af3c7c342d6db5e44f0c517594f3e"
+    },
+    {
+      "asset_id": "img_20f73bcd073d",
+      "filename": "250929/img_20f73bcd073d.png",
+      "sha256": "20f73bcd073d213f82e70560e5f57b6e35cde412e34507f038ff18d6f47999e2"
+    },
+    {
+      "asset_id": "img_2b657a608c0a",
+      "filename": "250929/img_2b657a608c0a.png",
+      "sha256": "2b657a608c0a27fb6759a5b9994b35e24fc2c7ea5a7e7df8b9f635147e4e7a05"
+    },
+    {
+      "asset_id": "img_9986e878b62e",
+      "filename": "250929/img_9986e878b62e.png",
+      "sha256": "9986e878b62e6ace1004ec4f6a4cfd740176a21e9835ecc75a7c03c2e6815ca0"
+    },
+    {
+      "asset_id": "img_9a2b88c178e1",
+      "filename": "250929/img_9a2b88c178e1.png",
+      "sha256": "9a2b88c178e10fc9166372425716718c641fdab68179ce098289f7b80fd29d68"
+    },
+    {
+      "asset_id": "img_11eaf88ea0e6",
+      "filename": "250929/img_11eaf88ea0e6.png",
+      "sha256": "11eaf88ea0e6337a81ab245b720a8509b3927446faa84b93787b1435a5928160"
+    },
+    {
+      "asset_id": "img_75d265f2c0ef",
+      "filename": "250929/img_75d265f2c0ef.png",
+      "sha256": "75d265f2c0ef3b2dc9d893193a7fa8e73b8c808d78dc3b4c2a8408e4be97c012"
+    },
+    {
+      "asset_id": "img_fc77b7336983",
+      "filename": "250929/img_fc77b7336983.png",
+      "sha256": "fc77b7336983cdb2da6e1c10fc540edb41e5772d8f0f37801f135ba10ec77e8e"
+    },
+    {
+      "asset_id": "img_bed154bda82e",
+      "filename": "250929/img_bed154bda82e.png",
+      "sha256": "bed154bda82e0787b3d12975f0beba9d83edb551e929211eed5b65ef8d242bd5"
+    },
+    {
+      "asset_id": "img_ab6d5c9b3b47",
+      "filename": "250929/img_ab6d5c9b3b47.png",
+      "sha256": "ab6d5c9b3b47c00efa542cbb881dac80b1af0029019e47d92127f83ea6ade448"
+    },
+    {
+      "asset_id": "img_ad490e4b031c",
+      "filename": "250929/img_ad490e4b031c.png",
+      "sha256": "ad490e4b031c075f55eb7787bc1a4a7fc07c07d0bf499f84e47552942ff49acf"
+    },
+    {
+      "asset_id": "img_ccccf80ad996",
+      "filename": "250929/img_ccccf80ad996.png",
+      "sha256": "ccccf80ad99692cf2486ccbe8e7dd773e9649b0b1e9f59c1a4261c13053501a6"
+    },
+    {
+      "asset_id": "img_c4b96d71e61a",
+      "filename": "250929/img_c4b96d71e61a.png",
+      "sha256": "c4b96d71e61ab60e3f31cdd262212773d81d519b4f78b59fd4e3b9f4ee654876"
+    },
+    {
+      "asset_id": "img_d6c7e483183e",
+      "filename": "250929/img_d6c7e483183e.png",
+      "sha256": "d6c7e483183ec6c22520e7323161ab5589c8e4a9175ff64334afa437a6de405b"
+    },
+    {
+      "asset_id": "img_e25067c2eedc",
+      "filename": "250929/img_e25067c2eedc.png",
+      "sha256": "e25067c2eedc795b9c7e4a63255f568b3a7c21c0c76586716eb227687542448c"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}

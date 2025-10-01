@@ -1,0 +1,419 @@
+{
+  "doc": {
+    "title": "Quarter-End",
+    "date": "2025-09-29",
+    "locale": "en-US",
+    "version": "v1",
+    "source_file": "250929 - Quarter-End.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7423a7a64012"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Will there be a shutdown? Yes, Trump says, “because the Democrats are crazed.” Why is the White House pursuing mass firings, not just furloughs, of federal workers? Trump responds, “Well, this is all caused by the Democrats.” “ If it has to shut down, it’ll have to shut down,” Trump said Friday. “But they’re the ones that are shutting down government.”"
+    },
+    {
+      "type": "paragraph",
+      "text": "The (semi) annual US debt-ceiling theatrics are upon us once again, with no progress made to avoid a possible government shutdown ahead of Tuesday's Sep 30th deadline.  As of the point of this writing, President Trump has just agreed to a last-minute talk with top congressional leaders scheduled for Monday, with healthcare funding remaining as a key divisive point."
+    },
+    {
+      "type": "paragraph",
+      "text": "While debt funding lapses are unlikely under even the worst case scenarios, any government closures could lead to a delay in the NFP release for this Friday, if the Bureau of Labour Statistics were to go dark temporarily.  This would deprive the market of a key economic release into the October Fed, and putting more weight and volatility on any Fed speeches in the meantime."
+    },
+    {
+      "type": "paragraph",
+      "text": "Assuming the BLS can stay open, NFP is expected to come in at just a touch above 100k in September with an unemployment rate of around 4.3%.  Asia markets will likely be slow as China heads into the Golden Week holidays, while quarter-end rebalancing flows possibly adding to some volatility mid-week just ahead."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_25e80450bb98"
+      },
+      "title": "Will Government Offices Manage to Stay Open to Make the NFP Release This Friday?",
+      "credit": "WSJ",
+      "credit_tokens": [
+        "WSJ"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Outside of Washington brinksmanship, markets were quiet last week as Q3 draws to a close on another very strong quarter.  Wall Street reports that the 'median' return on the average macro class has been about 2.5%, with gold leading the way up (~14%).  Global equities had another strong showing across the board, across both developed and emerging markets, while global rates settled lower as central banks have shifted to dovish tones across the board."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other major theme this quarter is with lower implied volatilities, evident across equities, rates, FX, and even BTC.  This has been driven by a collapse in realized volatilites thanks to an accommodative Fed, stabilizing global GDP, lack of significant tariff-passthroughs on CPI readings, and a flattening of geopolitics and tariff surprises."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lower volatilities have directly led to a rise in equity valuations and collapse in credit spreads, an inconvenient reality for those that might have missed out on the risk rally."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f385c4105d48"
+      },
+      "title": "Collapsing Volatility has Been a Major Theme Throughout 2025 and Continued in Q3",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_de468a1770f8"
+      },
+      "title": null,
+      "credit": "Citi, SignalPlus",
+      "credit_tokens": [
+        "Citi",
+        "SignalPlus"
+      ],
+      "group_id": "grp_0003",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_20f73bcd073d"
+      },
+      "title": "Global GDP has Held in For the Most Part with PMIs Still Firmly in Expansion Territory",
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the US fiscal year-end taking place at the end of September, the actual fiscal deficit actually came roughly in-line with the Congressional Budget Office's estimate for once ($1990bln vs $1978bln) according to Citi research.  That would actually be a $310bln reduction in deficit vs 2024, and the lowest absolute deficit level since 2021.  While the jury is still out on their long-term impact, US tariffs have improved the fiscal picture meaningfully and are expected to bring in $3T in revenues over the past decade, helping to lower the expected deficits over the next two years."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2b657a608c0a"
+      },
+      "title": "The Controversial Tariffs have Helped to Drive the US Fiscal Deficit to the Lowest Levels Since 2021",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9986e878b62e"
+      },
+      "title": null,
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "In response, the US dollar enjoyed one of its strongest weeks since mid summer, helped along by resilient US data and a sharp repricing early in front-end yields over the past week.  A persistent short-base in the greenback might drive the squeeze even further into Q4, especially if we even get a mild dial-down in the dovish Fed rhetoric, or a possible flight-to-quality bid should we get an equity swoon at some point."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9a2b88c178e1"
+      },
+      "title": "The USD Squeezed Meaningfully Higher Last Week on a Bounce in Front-End Yields and Robust Data",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_11eaf88ea0e6"
+      },
+      "title": null,
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0006",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "Things were much less rosy for Crypto last week, where the sector lost 300bln in market cap on a series of rapid deleveraging flows amongst the largest altcoins (ETH -10%, Solana -13%).  Single day liquidation exceeded $3bln last Monday, leading to nearly $1bln in weekly outflows across both BTC and ETH ETFs, respectively."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_75d265f2c0ef"
+      },
+      "title": "Crypto Suffered One of the Worst Weekly Performances Last Week",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_fc77b7336983"
+      },
+      "title": null,
+      "credit": "Messari, Bloomberg",
+      "credit_tokens": [
+        "Messari",
+        "Bloomberg"
+      ],
+      "group_id": "grp_0007",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_bed154bda82e"
+      },
+      "title": "Long Futures Liquidation Hit $3bln Last Monday, Amongst the Worst Days Over the Past Few Years",
+      "credit": "Coinglass",
+      "credit_tokens": [
+        "Coinglass"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ab6d5c9b3b47"
+      },
+      "title": "The Spot Sell-Off Triggered Nearly $1bln in Weekly Outflows for Both BTC and ETH ETFs",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ad490e4b031c"
+      },
+      "title": null,
+      "credit": "SosoValue",
+      "credit_tokens": [
+        "SosoValue"
+      ],
+      "group_id": "grp_0009",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ccccf80ad996"
+      },
+      "title": "Crypto DAT Valuation Premium Continues to Dwindle Towards Zero (or Discount)",
+      "credit": "Blockworks",
+      "credit_tokens": [
+        "Blockworks"
+      ],
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Interestingly, implied volatility remains low in BTC as the market is still not seeking any downside protection, possibly due to the ongoing dominance of the long-only DAT holders.  ETH vol has picked up given the large realized moves, leading to the largest volatility gap against BTC since 2019."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_c4b96d71e61a"
+      },
+      "title": "ETH-BTC Volatility Spread is at the Highest Gap Since 2019",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "While prices have sold off, the underlying crypto backdrop remains positive with Tether apparently in talks with a group of strategic investors (including Ark) to raise ~$20bln at a $500bln valuation, while Kraken is also supposedly raising yet another round of fund raising at a $20bln valuation right after closing their recent round."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_d6c7e483183e"
+      },
+      "title": "Tether is Continuing Their Path to Mainstream by Putting Traditional Investors on the Cap-Table",
+      "credit": "CNBC",
+      "credit_tokens": [
+        "CNBC"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Our bias remains similar to the past week, which is to prefer a more defensive stance, given extreme valuations and challenging seasonality.  Position in US equity ETFs have exploded back to the high levels since 2022, with good news on the economy / lukewarm inflation / dovish Fed all seemingly priced in."
+    },
+    {
+      "type": "paragraph",
+      "text": "As usual though, please DYOR and enjoy the holidays ahead for those of you in the region!  Good luck & good trading."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_e25067c2eedc"
+      },
+      "title": "This is What FOMO Looks Like, Once Again...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_7423a7a64012",
+      "filename": "250929/img_7423a7a64012.png",
+      "sha256": "7423a7a64012cf87f9fcc3e65d3df84e45a5f3bf3392d1f8015acf605e658cba"
+    },
+    {
+      "asset_id": "img_25e80450bb98",
+      "filename": "250929/img_25e80450bb98.png",
+      "sha256": "25e80450bb98645999ebc031179a5555c5bd86032b0e8e7843dce30584081d59"
+    },
+    {
+      "asset_id": "img_f385c4105d48",
+      "filename": "250929/img_f385c4105d48.png",
+      "sha256": "f385c4105d481e6e9ef975417e6e5923178efca9f44aa00b922653c33d9b0667"
+    },
+    {
+      "asset_id": "img_de468a1770f8",
+      "filename": "250929/img_de468a1770f8.png",
+      "sha256": "de468a1770f87ea5c137e7732700a473266af3c7c342d6db5e44f0c517594f3e"
+    },
+    {
+      "asset_id": "img_20f73bcd073d",
+      "filename": "250929/img_20f73bcd073d.png",
+      "sha256": "20f73bcd073d213f82e70560e5f57b6e35cde412e34507f038ff18d6f47999e2"
+    },
+    {
+      "asset_id": "img_2b657a608c0a",
+      "filename": "250929/img_2b657a608c0a.png",
+      "sha256": "2b657a608c0a27fb6759a5b9994b35e24fc2c7ea5a7e7df8b9f635147e4e7a05"
+    },
+    {
+      "asset_id": "img_9986e878b62e",
+      "filename": "250929/img_9986e878b62e.png",
+      "sha256": "9986e878b62e6ace1004ec4f6a4cfd740176a21e9835ecc75a7c03c2e6815ca0"
+    },
+    {
+      "asset_id": "img_9a2b88c178e1",
+      "filename": "250929/img_9a2b88c178e1.png",
+      "sha256": "9a2b88c178e10fc9166372425716718c641fdab68179ce098289f7b80fd29d68"
+    },
+    {
+      "asset_id": "img_11eaf88ea0e6",
+      "filename": "250929/img_11eaf88ea0e6.png",
+      "sha256": "11eaf88ea0e6337a81ab245b720a8509b3927446faa84b93787b1435a5928160"
+    },
+    {
+      "asset_id": "img_75d265f2c0ef",
+      "filename": "250929/img_75d265f2c0ef.png",
+      "sha256": "75d265f2c0ef3b2dc9d893193a7fa8e73b8c808d78dc3b4c2a8408e4be97c012"
+    },
+    {
+      "asset_id": "img_fc77b7336983",
+      "filename": "250929/img_fc77b7336983.png",
+      "sha256": "fc77b7336983cdb2da6e1c10fc540edb41e5772d8f0f37801f135ba10ec77e8e"
+    },
+    {
+      "asset_id": "img_bed154bda82e",
+      "filename": "250929/img_bed154bda82e.png",
+      "sha256": "bed154bda82e0787b3d12975f0beba9d83edb551e929211eed5b65ef8d242bd5"
+    },
+    {
+      "asset_id": "img_ab6d5c9b3b47",
+      "filename": "250929/img_ab6d5c9b3b47.png",
+      "sha256": "ab6d5c9b3b47c00efa542cbb881dac80b1af0029019e47d92127f83ea6ade448"
+    },
+    {
+      "asset_id": "img_ad490e4b031c",
+      "filename": "250929/img_ad490e4b031c.png",
+      "sha256": "ad490e4b031c075f55eb7787bc1a4a7fc07c07d0bf499f84e47552942ff49acf"
+    },
+    {
+      "asset_id": "img_ccccf80ad996",
+      "filename": "250929/img_ccccf80ad996.png",
+      "sha256": "ccccf80ad99692cf2486ccbe8e7dd773e9649b0b1e9f59c1a4261c13053501a6"
+    },
+    {
+      "asset_id": "img_c4b96d71e61a",
+      "filename": "250929/img_c4b96d71e61a.png",
+      "sha256": "c4b96d71e61ab60e3f31cdd262212773d81d519b4f78b59fd4e3b9f4ee654876"
+    },
+    {
+      "asset_id": "img_d6c7e483183e",
+      "filename": "250929/img_d6c7e483183e.png",
+      "sha256": "d6c7e483183ec6c22520e7323161ab5589c8e4a9175ff64334afa437a6de405b"
+    },
+    {
+      "asset_id": "img_e25067c2eedc",
+      "filename": "250929/img_e25067c2eedc.png",
+      "sha256": "e25067c2eedc795b9c7e4a63255f568b3a7c21c0c76586716eb227687542448c"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}
