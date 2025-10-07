@@ -1,0 +1,487 @@
+{
+  "doc": {
+    "title": "上涨十月",
+    "date": "2025-10-07",
+    "locale": "zh-CN",
+    "version": "v1",
+    "source_file": "251007 - 上漲十月.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_67c8e2501cae"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "与往年一样，市场在\"上涨十月\"迎来了爆发式开局，BTC和股票飙升至新的历史高点，美股受到又一项数十亿美元的OpenAI/AMD交易的推动，而日股则在高市早苗意外赢得领导权（作为财政鸽派）后大涨5%（日元汇率-2%）。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7b72e2179e3e"
+      },
+      "title": "全球风险资产飙升至又一纪录，日本因高市早苗意外胜出成为首位女首相而加入战局。",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7a184b48e356"
+      },
+      "title": null,
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "尽管因政府停摆导致资料静默期，但股市涨势在上周依然持续，由半导体（+4.4%）、生物科技（+10%）和耐用消费品（+3.6%）领涨。少数已公布的资料继续显示美国经济强劲，经济资料意外指数升至年内高点，远超已降低的预期。市场普遍预期美国GDP将在第四季度触底，然后在充足的系统流动性和有韧性的美国消费者支撑下，在2026年前显著反弹。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9000a7bf7178"
+      },
+      "title": "美国资料持续证明看空者是错误的，经济意外指数创下年内新高",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "上周最大的输家是全球债券，由于美国、中国以及现在可能还有日本的激进财政支出计划，我们看到了收益率上升带来的新压力，所有这些都发生在风险资产处于历史高位、通胀压力仍是每个人最关心的问题之际。法国突然出现的政治危机（勒科努总理辞职）加剧了债券市场的困境，但却利好黄金，金价取得了自1980年代初以来最持续的一轮上涨。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_51195d7bed61"
+      },
+      "title": "全球债券收益率出现熊市变陡，而金价则取得了自1980年代初以来最持续的上涨纪录",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_a087b7692248"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "当前\"法币贬值\"的主题仍在持续，M2流动性、贷款供应和其他信贷可获得性的大多数指标都指向创纪录的货币宽松水准，根据摩根大通的估计，这导致现金配置处于历史最低水准。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1084d6d6c0fc"
+      },
+      "title": "大多数流动性指标均处于创纪录的充裕水准，推动资产价格升至历史高点",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2dea4077ba63"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ee357160b153"
+      },
+      "title": "\"场边现金\"已跌至历史最低水准，因为所有人都在FOMO情绪驱使下转向风险偏好",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3ad03be3383c"
+      },
+      "title": "...这有助于推动贵金属和BTC迎来非凡的一年，白银年内涨幅现已达+60%",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "散户交易员再次从这轮涨势中受益，他们一直是当前行情的主要参与者，占个股交易量的12%以上，SPX期权交易量也再次逼近4月份的高点。似乎特朗普总统通过正面财富效应来\"货币化\"美国经济的努力正在按预期发挥作用。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2640f1ece8dd"
+      },
+      "title": "散户交易员一直是今年股市上涨的稳定参与者",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_83472b15e1ad"
+      },
+      "title": null,
+      "credit": "花旗",
+      "credit_tokens": [
+        "花旗"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ed928beb0200"
+      },
+      "title": "SPX期权交易量正再次逼近其4月份的纪录高点，这次是来自多头方",
+      "credit": "花旗",
+      "credit_tokens": [
+        "花旗"
+      ],
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "不甘示弱的是，BTC在ETF买盘复苏的推动下，也反弹至新的历史高点（12.6万美元），美国投资者去年向BTC ETF流入了超过32亿美元，成为有史以来第二大的单周流入量。贝莱德的IBIT ETF未平仓合约也在周五升至创纪录的498亿美元，现在已成为这家巨型资产管理公司最大的单一ETF收入来源，对于一个新推出的产品来说，这绝对是一个令人难以置信的壮举。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_4428f347f0cc"
+      },
+      "title": "上周美国BTC ETF出现了历史上第二大的单周资金流入（32亿美元）...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_aead3aeffa78"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_81d14af62eca"
+      },
+      "title": "...其中IBIT成为贝莱德年内最大的ETF收入来源",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "BTC ETF现在持有超过147万枚BTC（美国占主导地位，约90%），其次是DATs，持有100万枚（MSTR持有63万枚），而矿工仅持有9.3万枚。可以毫不夸张地说，华尔街对加密领域的接管已经完成，至少在驱动日常价格走势方面是如此。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_82d310f31e15"
+      },
+      "title": "主流ETF和DATs现在是加密货币日常价格走势的主要驱动力",
+      "credit": "Checkonchain",
+      "credit_tokens": [
+        "Checkonchain"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "鉴于美国政府停摆，短期内没有太多资料可期待，市场关注点预计将在10月下旬围绕FOMC和\"美股七巨头\"的财报升温。期权市场定价反映出，SPX在年底前再涨10%的隐含概率为5%，在目前这个节骨眼上，很难找到能够反驳这一观点的负面催化剂。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ea7aa7aae8c8"
+      },
+      "title": "股票期权市场定价预示10月大部分时间市场将平静上行，月末前后活动将恢复",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9b6f5097c5fb"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "在加密货币领域，我们看到在最近的跳涨（ETF买盘）中几乎没有空头被清算，这表明市场参与者仓位偏低，风险敞口极小。BTC隐含波动率仍然非常低（并且与ETH IV的差距创纪录），偏度仅略微为正，这表明在此期间阻力较小的路径可能是向上，正如\"上涨十月\"其名所示。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_86d50fee2c86"
+      },
+      "title": "在最近的上行中，市场几乎没有出现期货空头清算",
+      "credit": "Coinglass",
+      "credit_tokens": [
+        "Coinglass"
+      ],
+      "group_id": "grp_0014",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f0f54044bc02"
+      },
+      "title": "BTC隐含波动率和看涨偏度仍然较低，且持仓不足",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0015",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1ed6bdfec80c"
+      },
+      "title": null,
+      "credit": "SignalPlus",
+      "credit_tokens": [
+        "SignalPlus"
+      ],
+      "group_id": "grp_0015",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_869528e8676c"
+      },
+      "title": "在\"上涨十月\"期间，我们是否会看到进一步突破，迈向更高的历史高点？",
+      "credit": "Stray Reflections",
+      "credit_tokens": [
+        "Stray Reflections"
+      ],
+      "group_id": "grp_0016",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "无论如何，股票市场的风险情绪在未来几周仍将是关键驱动因素。祝你好运，并祝我们在这个地区的朋友们黄金周快乐！"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_67c8e2501cae",
+      "filename": "251007/img_67c8e2501cae.png",
+      "sha256": "67c8e2501cae3bf34a9a38db73594771ddbe9b59e8eb86fb0faee8a7cd3a156d"
+    },
+    {
+      "asset_id": "img_7b72e2179e3e",
+      "filename": "251007/img_7b72e2179e3e.png",
+      "sha256": "7b72e2179e3e7f76d5b96b4db3fd63a75fc3ac497d9d3d0cbd860dc5d57183af"
+    },
+    {
+      "asset_id": "img_7a184b48e356",
+      "filename": "251007/img_7a184b48e356.png",
+      "sha256": "7a184b48e356d7ac1d8cbf8bc5c79371fb3405b12f427f396aea12405dd7a861"
+    },
+    {
+      "asset_id": "img_9000a7bf7178",
+      "filename": "251007/img_9000a7bf7178.png",
+      "sha256": "9000a7bf7178828c88bcf62e8eea168abefc229ce94613ff3f9a7be399a9bbb8"
+    },
+    {
+      "asset_id": "img_51195d7bed61",
+      "filename": "251007/img_51195d7bed61.png",
+      "sha256": "51195d7bed61f64c83057910e0560d35ce40c2ee0ad52592dc6d19afe26935cf"
+    },
+    {
+      "asset_id": "img_a087b7692248",
+      "filename": "251007/img_a087b7692248.png",
+      "sha256": "a087b769224850c7c9743a6f1b43b11d29de1ba8cf462f7804d5321045e8a7ec"
+    },
+    {
+      "asset_id": "img_1084d6d6c0fc",
+      "filename": "251007/img_1084d6d6c0fc.png",
+      "sha256": "1084d6d6c0fc844d566cf65a6f67febf0636539564936981887206d979761b58"
+    },
+    {
+      "asset_id": "img_2dea4077ba63",
+      "filename": "251007/img_2dea4077ba63.png",
+      "sha256": "2dea4077ba63c01208cd4a6e4a4e51dca49fdeb093cafb57d99711b1496d78f2"
+    },
+    {
+      "asset_id": "img_ee357160b153",
+      "filename": "251007/img_ee357160b153.png",
+      "sha256": "ee357160b153720059aba6e228b1f6a7c93130d453ee9c8f9cb74c7c695077fc"
+    },
+    {
+      "asset_id": "img_3ad03be3383c",
+      "filename": "251007/img_3ad03be3383c.png",
+      "sha256": "3ad03be3383cd3545a0700e7fef4c699ac9c9eede9c6af23a4aa3311dbae9457"
+    },
+    {
+      "asset_id": "img_2640f1ece8dd",
+      "filename": "251007/img_2640f1ece8dd.png",
+      "sha256": "2640f1ece8dd825a5aba831003d6f5193d81f036e1a803c68ddea641895e132b"
+    },
+    {
+      "asset_id": "img_83472b15e1ad",
+      "filename": "251007/img_83472b15e1ad.png",
+      "sha256": "83472b15e1ad0c3fc32a400e9318aca9b0342a634a8b4f1efbd848b50cd26a07"
+    },
+    {
+      "asset_id": "img_ed928beb0200",
+      "filename": "251007/img_ed928beb0200.png",
+      "sha256": "ed928beb020042a403a1840bc3649aa2c0aeabc5ffde84745e545ea4eecb37cd"
+    },
+    {
+      "asset_id": "img_4428f347f0cc",
+      "filename": "251007/img_4428f347f0cc.png",
+      "sha256": "4428f347f0ccea40197607e8864f97e35649a11532b518500a07bf97e4e75c96"
+    },
+    {
+      "asset_id": "img_aead3aeffa78",
+      "filename": "251007/img_aead3aeffa78.png",
+      "sha256": "aead3aeffa787adfe8656da5f47e13712d2bbf9f9d7aeca026fd71de1e6897e5"
+    },
+    {
+      "asset_id": "img_81d14af62eca",
+      "filename": "251007/img_81d14af62eca.png",
+      "sha256": "81d14af62eca3cced3540532ea40f95c22930e13955ccd5a7133e3452b2fec33"
+    },
+    {
+      "asset_id": "img_82d310f31e15",
+      "filename": "251007/img_82d310f31e15.jpeg",
+      "sha256": "82d310f31e1550df0740765a7d810f981125e1f06ac75ab1b6b01f19192bd831"
+    },
+    {
+      "asset_id": "img_ea7aa7aae8c8",
+      "filename": "251007/img_ea7aa7aae8c8.png",
+      "sha256": "ea7aa7aae8c8513b53047d67c4d29d562f881d280216ce46cca0da056262a73e"
+    },
+    {
+      "asset_id": "img_9b6f5097c5fb",
+      "filename": "251007/img_9b6f5097c5fb.png",
+      "sha256": "9b6f5097c5fbfede45ea0ca397b9f6caf9a257c4e9f3fe4243388f527738a691"
+    },
+    {
+      "asset_id": "img_86d50fee2c86",
+      "filename": "251007/img_86d50fee2c86.png",
+      "sha256": "86d50fee2c865ae1e41a571d05c45afce29763c0501931caf93fbe47aae9aa34"
+    },
+    {
+      "asset_id": "img_f0f54044bc02",
+      "filename": "251007/img_f0f54044bc02.png",
+      "sha256": "f0f54044bc022340ac3ba4ab3035967c79647c9cf121974f697f4bf070bbe6d4"
+    },
+    {
+      "asset_id": "img_1ed6bdfec80c",
+      "filename": "251007/img_1ed6bdfec80c.png",
+      "sha256": "1ed6bdfec80c256d9cb75fbee95820f1bdc9913c1e23feaf1c577fa91bd0d66d"
+    },
+    {
+      "asset_id": "img_869528e8676c",
+      "filename": "251007/img_869528e8676c.png",
+      "sha256": "869528e8676c706676a3f2c6107d5499ac8d1e9272a752ec95fa2eb4ab8aca4a"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}

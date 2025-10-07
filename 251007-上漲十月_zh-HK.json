@@ -1,0 +1,487 @@
+{
+  "doc": {
+    "title": "上漲十月",
+    "date": "2025-10-07",
+    "locale": "zh-HK",
+    "version": "v1",
+    "source_file": "251007 - 上漲十月.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_67c8e2501cae"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "與往年一樣，市場在\"上漲十月\"迎來了爆發式開局，BTC和股票飆升至新的歷史高點，美股受到又一項數十億美元的OpenAI/AMD交易的推動，而日股則在高市早苗意外贏得領導權（作為財政鴿派）後大漲5%（日元匯率-2%）。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7b72e2179e3e"
+      },
+      "title": "全球風險資產飆升至又一紀錄，日本因高市早苗意外勝出成為首位女首相而加入戰局。",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7a184b48e356"
+      },
+      "title": null,
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "儘管因政府停擺導致資料靜默期，但股市漲勢在上周依然持續，由半導體（+4.4%）、生物科技（+10%）和耐用消費品（+3.6%）領漲。少數已公佈的資料繼續顯示美國經濟強勁，經濟資料意外指數升至年內高點，遠超已降低的預期。市場普遍預期美國GDP將在第四季度觸底，然後在充足的系統流動性和有韌性的美國消費者支撐下，在2026年前顯著反彈。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9000a7bf7178"
+      },
+      "title": "美國資料持續證明看空者是錯誤的，經濟意外指數創下年內新高",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "上周最大的輸家是全球債券，由於美國、中國以及現在可能還有日本的激進財政支出計畫，我們看到了收益率上升帶來的新壓力，所有這些都發生在風險資產處於歷史高位、通脹壓力仍是每個人最關心的問題之際。法國突然出現的政治危機（勒科努總理辭職）加劇了債券市場的困境，但卻利好黃金，金價取得了自1980年代初以來最持續的一輪上漲。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_51195d7bed61"
+      },
+      "title": "全球債券收益率出現熊市變陡，而金價則取得了自1980年代初以來最持續的上漲紀錄",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_a087b7692248"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "當前\"法幣貶值\"的主題仍在持續，M2流動性、貸款供應和其他信貸可獲得性的大多數指標都指向創紀錄的貨幣寬鬆水準，根據摩根大通的估計，這導致現金配置處於歷史最低水準。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1084d6d6c0fc"
+      },
+      "title": "大多數流動性指標均處於創紀錄的充裕水準，推動資產價格升至歷史高點",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2dea4077ba63"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ee357160b153"
+      },
+      "title": "\"場邊現金\"已跌至歷史最低水準，因為所有人都在FOMO情緒驅使下轉向風險偏好",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3ad03be3383c"
+      },
+      "title": "...這有助於推動貴金屬和BTC迎來非凡的一年，白銀年內漲幅現已達+60%",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "散戶交易員再次從這輪漲勢中受益，他們一直是當前行情的主要參與者，占個股交易量的12%以上，SPX期權交易量也再次逼近4月份的高點。似乎特朗普總統通過正面財富效應來\"貨幣化\"美國經濟的努力正在按預期發揮作用。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2640f1ece8dd"
+      },
+      "title": "散戶交易員一直是今年股市上漲的穩定參與者",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_83472b15e1ad"
+      },
+      "title": null,
+      "credit": "花旗",
+      "credit_tokens": [
+        "花旗"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ed928beb0200"
+      },
+      "title": "SPX期權交易量正再次逼近其4月份的紀錄高點，這次是來自多頭方",
+      "credit": "花旗",
+      "credit_tokens": [
+        "花旗"
+      ],
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "不甘示弱的是，BTC在ETF買盤復蘇的推動下，也反彈至新的歷史高點（12.6萬美元），美國投資者去年向BTC ETF流入了超過32億美元，成為有史以來第二大的單周流入量。貝萊德的IBIT ETF未平倉合約也在週五升至創紀錄的498億美元，現在已成為這家巨型資產管理公司最大的單一ETF收入來源，對於一個新推出的產品來說，這絕對是一個令人難以置信的壯舉。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_4428f347f0cc"
+      },
+      "title": "上周美國BTC ETF出現了歷史上第二大的單周資金流入（32億美元）...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_aead3aeffa78"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_81d14af62eca"
+      },
+      "title": "...其中IBIT成為貝萊德年內最大的ETF收入來源",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "BTC ETF現在持有超過147萬枚BTC（美國占主導地位，約90%），其次是DATs，持有100萬枚（MSTR持有63萬枚），而礦工僅持有9.3萬枚。可以毫不誇張地說，華爾街對加密領域的接管已經完成，至少在驅動日常價格走勢方面是如此。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_82d310f31e15"
+      },
+      "title": "主流ETF和DATs現在是加密貨幣日常價格走勢的主要驅動力",
+      "credit": "Checkonchain",
+      "credit_tokens": [
+        "Checkonchain"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "鑒於美國政府停擺，短期內沒有太多資料可期待，市場關注點預計將在10月下旬圍繞FOMC和\"美股七巨頭\"的財報升溫。期權市場定價反映出，SPX在年底前再漲10%的隱含概率為5%，在目前這個節骨眼上，很難找到能夠反駁這一觀點的負面催化劑。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ea7aa7aae8c8"
+      },
+      "title": "股票期權市場定價預示10月大部分時間市場將平靜上行，月末前後活動將恢復",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9b6f5097c5fb"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "在加密貨幣領域，我們看到在最近的跳漲（ETF買盤）中幾乎沒有空頭被清算，這表明市場參與者倉位偏低，風險敞口極小。BTC隱含波動率仍然非常低（並且與ETH IV的差距創紀錄），偏度僅略微為正，這表明在此期間阻力較小的路徑可能是向上，正如\"上漲十月\"其名所示。"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_86d50fee2c86"
+      },
+      "title": "在最近的上行中，市場幾乎沒有出現期貨空頭清算",
+      "credit": "Coinglass",
+      "credit_tokens": [
+        "Coinglass"
+      ],
+      "group_id": "grp_0014",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f0f54044bc02"
+      },
+      "title": "BTC隱含波動率和看漲偏度仍然較低，且持倉不足",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0015",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1ed6bdfec80c"
+      },
+      "title": null,
+      "credit": "SignalPlus",
+      "credit_tokens": [
+        "SignalPlus"
+      ],
+      "group_id": "grp_0015",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_869528e8676c"
+      },
+      "title": "在\"上漲十月\"期間，我們是否會看到進一步突破，邁向更高的歷史高點？",
+      "credit": "Stray Reflections",
+      "credit_tokens": [
+        "Stray Reflections"
+      ],
+      "group_id": "grp_0016",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "無論如何，股票市場的風險情緒在未來幾周仍將是關鍵驅動因素。祝你好運，並祝我們在這個地區的朋友們黃金周快樂！"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_67c8e2501cae",
+      "filename": "251007/img_67c8e2501cae.png",
+      "sha256": "67c8e2501cae3bf34a9a38db73594771ddbe9b59e8eb86fb0faee8a7cd3a156d"
+    },
+    {
+      "asset_id": "img_7b72e2179e3e",
+      "filename": "251007/img_7b72e2179e3e.png",
+      "sha256": "7b72e2179e3e7f76d5b96b4db3fd63a75fc3ac497d9d3d0cbd860dc5d57183af"
+    },
+    {
+      "asset_id": "img_7a184b48e356",
+      "filename": "251007/img_7a184b48e356.png",
+      "sha256": "7a184b48e356d7ac1d8cbf8bc5c79371fb3405b12f427f396aea12405dd7a861"
+    },
+    {
+      "asset_id": "img_9000a7bf7178",
+      "filename": "251007/img_9000a7bf7178.png",
+      "sha256": "9000a7bf7178828c88bcf62e8eea168abefc229ce94613ff3f9a7be399a9bbb8"
+    },
+    {
+      "asset_id": "img_51195d7bed61",
+      "filename": "251007/img_51195d7bed61.png",
+      "sha256": "51195d7bed61f64c83057910e0560d35ce40c2ee0ad52592dc6d19afe26935cf"
+    },
+    {
+      "asset_id": "img_a087b7692248",
+      "filename": "251007/img_a087b7692248.png",
+      "sha256": "a087b769224850c7c9743a6f1b43b11d29de1ba8cf462f7804d5321045e8a7ec"
+    },
+    {
+      "asset_id": "img_1084d6d6c0fc",
+      "filename": "251007/img_1084d6d6c0fc.png",
+      "sha256": "1084d6d6c0fc844d566cf65a6f67febf0636539564936981887206d979761b58"
+    },
+    {
+      "asset_id": "img_2dea4077ba63",
+      "filename": "251007/img_2dea4077ba63.png",
+      "sha256": "2dea4077ba63c01208cd4a6e4a4e51dca49fdeb093cafb57d99711b1496d78f2"
+    },
+    {
+      "asset_id": "img_ee357160b153",
+      "filename": "251007/img_ee357160b153.png",
+      "sha256": "ee357160b153720059aba6e228b1f6a7c93130d453ee9c8f9cb74c7c695077fc"
+    },
+    {
+      "asset_id": "img_3ad03be3383c",
+      "filename": "251007/img_3ad03be3383c.png",
+      "sha256": "3ad03be3383cd3545a0700e7fef4c699ac9c9eede9c6af23a4aa3311dbae9457"
+    },
+    {
+      "asset_id": "img_2640f1ece8dd",
+      "filename": "251007/img_2640f1ece8dd.png",
+      "sha256": "2640f1ece8dd825a5aba831003d6f5193d81f036e1a803c68ddea641895e132b"
+    },
+    {
+      "asset_id": "img_83472b15e1ad",
+      "filename": "251007/img_83472b15e1ad.png",
+      "sha256": "83472b15e1ad0c3fc32a400e9318aca9b0342a634a8b4f1efbd848b50cd26a07"
+    },
+    {
+      "asset_id": "img_ed928beb0200",
+      "filename": "251007/img_ed928beb0200.png",
+      "sha256": "ed928beb020042a403a1840bc3649aa2c0aeabc5ffde84745e545ea4eecb37cd"
+    },
+    {
+      "asset_id": "img_4428f347f0cc",
+      "filename": "251007/img_4428f347f0cc.png",
+      "sha256": "4428f347f0ccea40197607e8864f97e35649a11532b518500a07bf97e4e75c96"
+    },
+    {
+      "asset_id": "img_aead3aeffa78",
+      "filename": "251007/img_aead3aeffa78.png",
+      "sha256": "aead3aeffa787adfe8656da5f47e13712d2bbf9f9d7aeca026fd71de1e6897e5"
+    },
+    {
+      "asset_id": "img_81d14af62eca",
+      "filename": "251007/img_81d14af62eca.png",
+      "sha256": "81d14af62eca3cced3540532ea40f95c22930e13955ccd5a7133e3452b2fec33"
+    },
+    {
+      "asset_id": "img_82d310f31e15",
+      "filename": "251007/img_82d310f31e15.jpeg",
+      "sha256": "82d310f31e1550df0740765a7d810f981125e1f06ac75ab1b6b01f19192bd831"
+    },
+    {
+      "asset_id": "img_ea7aa7aae8c8",
+      "filename": "251007/img_ea7aa7aae8c8.png",
+      "sha256": "ea7aa7aae8c8513b53047d67c4d29d562f881d280216ce46cca0da056262a73e"
+    },
+    {
+      "asset_id": "img_9b6f5097c5fb",
+      "filename": "251007/img_9b6f5097c5fb.png",
+      "sha256": "9b6f5097c5fbfede45ea0ca397b9f6caf9a257c4e9f3fe4243388f527738a691"
+    },
+    {
+      "asset_id": "img_86d50fee2c86",
+      "filename": "251007/img_86d50fee2c86.png",
+      "sha256": "86d50fee2c865ae1e41a571d05c45afce29763c0501931caf93fbe47aae9aa34"
+    },
+    {
+      "asset_id": "img_f0f54044bc02",
+      "filename": "251007/img_f0f54044bc02.png",
+      "sha256": "f0f54044bc022340ac3ba4ab3035967c79647c9cf121974f697f4bf070bbe6d4"
+    },
+    {
+      "asset_id": "img_1ed6bdfec80c",
+      "filename": "251007/img_1ed6bdfec80c.png",
+      "sha256": "1ed6bdfec80c256d9cb75fbee95820f1bdc9913c1e23feaf1c577fa91bd0d66d"
+    },
+    {
+      "asset_id": "img_869528e8676c",
+      "filename": "251007/img_869528e8676c.png",
+      "sha256": "869528e8676c706676a3f2c6107d5499ac8d1e9272a752ec95fa2eb4ab8aca4a"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}

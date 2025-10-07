@@ -1,0 +1,487 @@
+{
+  "doc": {
+    "title": "Uptober",
+    "date": "2025-10-07",
+    "locale": "en-US",
+    "version": "v1",
+    "source_file": "251007 - Uptober.docx"
+  },
+  "blocks": [
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_67c8e2501cae"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0001",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "True to years past, markets enjoyed an explosive start to Uptober with BTC and equities rallying to new ATHs, with US stocks powered by yet another multi-billion OpenAI/AMD deal, while Japanese stocks surged 5% (JPY FX -2%) on Takaichi-san's surprised leadership win as fiscal dove."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7b72e2179e3e"
+      },
+      "title": "Global Risk Assets Surged to Another Record, With Japan Joining the Fray with Takaichi's Surprise Victory as Japan's 1st Female PM",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0002",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_7a184b48e356"
+      },
+      "title": null,
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0002",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "Despite the data blackout due to the government shutdown, the equity rally powered on led by Semi Conductors (+4.4%), Biotech (+10%) and Consumer Durables (+3.6%) leading the way last week.  The few data pieces that have come in continue to show a robust US economy, with surprises coming in at YTD highs against lowered expectations.  US GDP is widely expected to trough in Q4 before making significant rebounds into 2026 and thanks to ample system liquidity and a resilient US consumer."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9000a7bf7178"
+      },
+      "title": "US Data Continues to Prove Nay-sayers Wrong with a YTD High in Economic Surprises",
+      "credit": "Bloomberg",
+      "credit_tokens": [
+        "Bloomberg"
+      ],
+      "group_id": "grp_0003",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "The biggest losers last week were with global bonds, where we are seeing renewed stress on higher yields on the back of the aggressive fiscal spending plans out of US, China, and now possibly Japan, all of which are happening with risk assets at ATHs and inflation pressures still on everyone's top of mind.  A sudden political crisis emerging out of France (PM Lecornu's resignation) has added to the bond market's woes, but to the benefit of gold, which has strung together its best winning record since the early 1980s."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_51195d7bed61"
+      },
+      "title": "Global Bond Yields have Bear-Steepened While Gold Prices Have Enjoyed Their Most Consistent Winning Record Since the Early 1980s",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_a087b7692248"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0004",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "The current 'fiat debasement' theme continues unabated, with most measures of M2 liquidity, loan supply, and other credit availability pointing to record levels of money-easiness, leading to cash allocations beign at their lowest level in history based on JPM estimates."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1084d6d6c0fc"
+      },
+      "title": "Most Measures of Liquidity are Flush at Record Levels, Propelling Asset Prices to ATHs",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2dea4077ba63"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0005",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ee357160b153"
+      },
+      "title": "'Cash on the Sidelines' Have Breached to the Lowest Levels on History as Everyone is Being FOMO'ed to Risk-On...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0006",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_3ad03be3383c"
+      },
+      "title": "...Which has Helped to Propel Precious Metals & BTC to a Remarkable Year With Silver Now Running at +60% Gains YTD",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0007",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Once again, retail traders have benefitted from the rally as they have been a major participant of the current move, consisting of over 12% of single stock volumes with SPX option volumes re-approaching April highs.  It would seem that President Trump's efforts to 'monetize' the US economy with positive wealth effects are working as intended."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_2640f1ece8dd"
+      },
+      "title": "Retail Traders have Been a Consistent Participant of This Year's Equity Rally",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0008",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_83472b15e1ad"
+      },
+      "title": null,
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0008",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ed928beb0200"
+      },
+      "title": "SPX Option Volumes are Re-Approaching Their April Record Highs, This Time from the Long Side",
+      "credit": "Citi",
+      "credit_tokens": [
+        "Citi"
+      ],
+      "group_id": "grp_0009",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not to be outdone, BTC staged its own rebound to new ATHs ($126k) on renewed ETF buying, which saw US investors pouring over $3.2bln of inflows into BTC ETFs last year, good for the 2nd largest week in history.  Open interest on Blackrock's IBIT ETF also rose to a record $49.8bln on Friday, and is now the single largest ETF revenue generator for the mega asset manager, an absolutely incredible feat for a newly launched product."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_4428f347f0cc"
+      },
+      "title": "US BTC ETFs Saw the 2nd Largest Weekly Inflow in History ($3.2bln) Last Week...",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_aead3aeffa78"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0010",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_81d14af62eca"
+      },
+      "title": "...With IBIT Being the Largest ETF Revenue Generator for Blackrock YTD",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0011",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "BTC ETFs now own over 1.47M BTC (~90% USA dominance), followed by DATs at 1M BTC (MSTR at 0.63M), and miners at only 93K.  It's probably not unreasonable to say that the Wall Street takeover of crypto is complete, at least in terms of driving the day-to-day price action."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_82d310f31e15"
+      },
+      "title": "Mainstream ETFs and DATs are Now the Primary Drivers to Day to Day Crypto Price Action",
+      "credit": "Checkonchain",
+      "credit_tokens": [
+        "Checkonchain"
+      ],
+      "group_id": "grp_0012",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Given the US government shutdown, there's not a lot of data to look forward to in the near-term, with things looking to heat up in late October over FOMC and the Mag-7 earnings.  Options markets are pricing in a feral 5% chance for another 10% rally in the SPX into year-end, and it's increasingly difficult to find a negative catalyst to counteract that view at the current juncture."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_ea7aa7aae8c8"
+      },
+      "title": "Equity Options Market Pricing in a Quiet, Upward Grinding Market in Most of October Before Activity to Return Around Month-End",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_9b6f5097c5fb"
+      },
+      "title": null,
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0013",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "paragraph",
+      "text": "In crypto, we saw little shorts liquidation on the recent gap up (ETF buying), suggesting that participants are underweight with minimal risk exposures.  BTV IV remains very low (and a record gap vs ETH IV) with skews barely positive, suggesting that the path of resistance in the meantime may be higher as Uptober lives true to its name."
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_86d50fee2c86"
+      },
+      "title": "Markets Barely Saw Any Futures-Shorts Liquidation on the Latest Run Up",
+      "credit": "Coinglass",
+      "credit_tokens": [
+        "Coinglass"
+      ],
+      "group_id": "grp_0014",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_f0f54044bc02"
+      },
+      "title": "BTC IV and Upside Skew Remains Low and Underowned",
+      "credit": null,
+      "credit_tokens": null,
+      "group_id": "grp_0015",
+      "group_seq": 1,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_1ed6bdfec80c"
+      },
+      "title": null,
+      "credit": "SignalPlus",
+      "credit_tokens": [
+        "SignalPlus"
+      ],
+      "group_id": "grp_0015",
+      "group_seq": 2,
+      "group_len": 2,
+      "layout": "row"
+    },
+    {
+      "type": "figure",
+      "image": {
+        "asset_id": "img_869528e8676c"
+      },
+      "title": "Will We See a Further Breakout to Further ATHs During Uptober?",
+      "credit": "Stray Reflections",
+      "credit_tokens": [
+        "Stray Reflections"
+      ],
+      "group_id": "grp_0016",
+      "group_seq": 1,
+      "group_len": 1,
+      "layout": "column"
+    },
+    {
+      "type": "paragraph",
+      "text": "In any case, equity risk sentiment shall continue to be the key driver over the following weeks.  Good luck & Happy Golden Week to our friends in the region!"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "img_67c8e2501cae",
+      "filename": "251007/img_67c8e2501cae.png",
+      "sha256": "67c8e2501cae3bf34a9a38db73594771ddbe9b59e8eb86fb0faee8a7cd3a156d"
+    },
+    {
+      "asset_id": "img_7b72e2179e3e",
+      "filename": "251007/img_7b72e2179e3e.png",
+      "sha256": "7b72e2179e3e7f76d5b96b4db3fd63a75fc3ac497d9d3d0cbd860dc5d57183af"
+    },
+    {
+      "asset_id": "img_7a184b48e356",
+      "filename": "251007/img_7a184b48e356.png",
+      "sha256": "7a184b48e356d7ac1d8cbf8bc5c79371fb3405b12f427f396aea12405dd7a861"
+    },
+    {
+      "asset_id": "img_9000a7bf7178",
+      "filename": "251007/img_9000a7bf7178.png",
+      "sha256": "9000a7bf7178828c88bcf62e8eea168abefc229ce94613ff3f9a7be399a9bbb8"
+    },
+    {
+      "asset_id": "img_51195d7bed61",
+      "filename": "251007/img_51195d7bed61.png",
+      "sha256": "51195d7bed61f64c83057910e0560d35ce40c2ee0ad52592dc6d19afe26935cf"
+    },
+    {
+      "asset_id": "img_a087b7692248",
+      "filename": "251007/img_a087b7692248.png",
+      "sha256": "a087b769224850c7c9743a6f1b43b11d29de1ba8cf462f7804d5321045e8a7ec"
+    },
+    {
+      "asset_id": "img_1084d6d6c0fc",
+      "filename": "251007/img_1084d6d6c0fc.png",
+      "sha256": "1084d6d6c0fc844d566cf65a6f67febf0636539564936981887206d979761b58"
+    },
+    {
+      "asset_id": "img_2dea4077ba63",
+      "filename": "251007/img_2dea4077ba63.png",
+      "sha256": "2dea4077ba63c01208cd4a6e4a4e51dca49fdeb093cafb57d99711b1496d78f2"
+    },
+    {
+      "asset_id": "img_ee357160b153",
+      "filename": "251007/img_ee357160b153.png",
+      "sha256": "ee357160b153720059aba6e228b1f6a7c93130d453ee9c8f9cb74c7c695077fc"
+    },
+    {
+      "asset_id": "img_3ad03be3383c",
+      "filename": "251007/img_3ad03be3383c.png",
+      "sha256": "3ad03be3383cd3545a0700e7fef4c699ac9c9eede9c6af23a4aa3311dbae9457"
+    },
+    {
+      "asset_id": "img_2640f1ece8dd",
+      "filename": "251007/img_2640f1ece8dd.png",
+      "sha256": "2640f1ece8dd825a5aba831003d6f5193d81f036e1a803c68ddea641895e132b"
+    },
+    {
+      "asset_id": "img_83472b15e1ad",
+      "filename": "251007/img_83472b15e1ad.png",
+      "sha256": "83472b15e1ad0c3fc32a400e9318aca9b0342a634a8b4f1efbd848b50cd26a07"
+    },
+    {
+      "asset_id": "img_ed928beb0200",
+      "filename": "251007/img_ed928beb0200.png",
+      "sha256": "ed928beb020042a403a1840bc3649aa2c0aeabc5ffde84745e545ea4eecb37cd"
+    },
+    {
+      "asset_id": "img_4428f347f0cc",
+      "filename": "251007/img_4428f347f0cc.png",
+      "sha256": "4428f347f0ccea40197607e8864f97e35649a11532b518500a07bf97e4e75c96"
+    },
+    {
+      "asset_id": "img_aead3aeffa78",
+      "filename": "251007/img_aead3aeffa78.png",
+      "sha256": "aead3aeffa787adfe8656da5f47e13712d2bbf9f9d7aeca026fd71de1e6897e5"
+    },
+    {
+      "asset_id": "img_81d14af62eca",
+      "filename": "251007/img_81d14af62eca.png",
+      "sha256": "81d14af62eca3cced3540532ea40f95c22930e13955ccd5a7133e3452b2fec33"
+    },
+    {
+      "asset_id": "img_82d310f31e15",
+      "filename": "251007/img_82d310f31e15.jpeg",
+      "sha256": "82d310f31e1550df0740765a7d810f981125e1f06ac75ab1b6b01f19192bd831"
+    },
+    {
+      "asset_id": "img_ea7aa7aae8c8",
+      "filename": "251007/img_ea7aa7aae8c8.png",
+      "sha256": "ea7aa7aae8c8513b53047d67c4d29d562f881d280216ce46cca0da056262a73e"
+    },
+    {
+      "asset_id": "img_9b6f5097c5fb",
+      "filename": "251007/img_9b6f5097c5fb.png",
+      "sha256": "9b6f5097c5fbfede45ea0ca397b9f6caf9a257c4e9f3fe4243388f527738a691"
+    },
+    {
+      "asset_id": "img_86d50fee2c86",
+      "filename": "251007/img_86d50fee2c86.png",
+      "sha256": "86d50fee2c865ae1e41a571d05c45afce29763c0501931caf93fbe47aae9aa34"
+    },
+    {
+      "asset_id": "img_f0f54044bc02",
+      "filename": "251007/img_f0f54044bc02.png",
+      "sha256": "f0f54044bc022340ac3ba4ab3035967c79647c9cf121974f697f4bf070bbe6d4"
+    },
+    {
+      "asset_id": "img_1ed6bdfec80c",
+      "filename": "251007/img_1ed6bdfec80c.png",
+      "sha256": "1ed6bdfec80c256d9cb75fbee95820f1bdc9913c1e23feaf1c577fa91bd0d66d"
+    },
+    {
+      "asset_id": "img_869528e8676c",
+      "filename": "251007/img_869528e8676c.png",
+      "sha256": "869528e8676c706676a3f2c6107d5499ac8d1e9272a752ec95fa2eb4ab8aca4a"
+    }
+  ],
+  "report": {
+    "warnings": [],
+    "debug": []
+  }
+}
