@@ -53,22 +53,40 @@
 ## 安装
 
 ### 环境要求
-- Python 3.7+
+- Python 3.9+（推荐 3.12 或 3.13）
 - python-docx 库
 - opencc-python-reimplemented 库（繁体转简体功能）
+- lxml 库
 
 ### 安装步骤
+
+#### 快速安装（推荐）
 ```bash
-# 克隆项目
+# 1. 克隆项目
 git clone <repository-url>
 cd docx2json
 
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+# 2. 创建虚拟环境
+python3 -m venv .venv
 
-# 安装依赖
-pip install python-docx opencc-python-reimplemented
+# 3. 激活虚拟环境
+source .venv/bin/activate  # macOS/Linux
+# Windows: .venv\Scripts\activate
+
+# 4. 安装依赖
+pip install -r requirements.txt
+```
+
+#### 手动安装
+```bash
+# 如果没有 requirements.txt，可以手动安装
+pip install python-docx opencc-python-reimplemented lxml
+```
+
+### 验证安装
+```bash
+# 确保虚拟环境已激活
+python -c "from docx import Document; import opencc; print('✓ 依赖安装成功！')"
 ```
 
 ## 使用方法
