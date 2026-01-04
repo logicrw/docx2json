@@ -103,7 +103,7 @@ def sha256_of_file(path: str) -> str:
     return h.hexdigest()
 
 def normalize_credits(text: str) -> Tuple[str, List[str]]:
-    """
+    r"""
     Normalize figure credits to raw credits (no leading label).
     - Strip leading prefix using regex: ^(?:source|来源|來源)\s*[:：]\s* (case-insensitive)
     - Split by separators [、，,;；／/|], trim tokens, drop empties, de-duplicate preserving order
@@ -416,97 +416,80 @@ def extract_and_hash_images(figures: List[FigureCandidate], docx_path: str, asse
     return assets
 
 # --------- Phase 2: Group Figures ----------
-def group_figures(figures: List[FigureCandidate], para_texts: List[str], 
+def group_figures(figures: List[FigureCandidate], para_texts: List[str],
                  page_width_emu: int, config: Config) -> List[GroupCandidate]:
-    """Group figures using two-phase algorithm"""
+    """Group figures by identifying continuous figure regions.
+
+    Algorithm:
+    1. Sort all figures by para_idx (content_idx)
+    2. Greedily merge adjacent figures into the same group if no substantial text between them
+    3. All groups use layout='column' since final rendering is always top-to-bottom
+    """
     if not figures:
         return []
-    
+
+    # Sort figures by para_idx, then by run_idx
+    sorted_figures = sorted(figures, key=lambda f: (f.para_idx, f.run_idx))
+
     groups = []
-    used_figure_indices = set()
-    
-    # Phase 1: Same-paragraph grouping (row layout)
-    figures_by_para = {}
-    for i, fig in enumerate(figures):
-        para_idx = fig.para_idx
-        if para_idx not in figures_by_para:
-            figures_by_para[para_idx] = []
-        figures_by_para[para_idx].append((i, fig))
-    
-    for para_idx, para_figs in figures_by_para.items():
-        if len(para_figs) >= 2:
-            # Multiple figures in same paragraph -> row group
-            group_figures = [fig for _, fig in para_figs]
-            reason = f"row by same-paragraph(para={para_idx}, {len(group_figures)} images)"
+    current_group_figures = [sorted_figures[0]]
+    reason_parts = [f"para={sorted_figures[0].para_idx}"]
+
+    for i in range(1, len(sorted_figures)):
+        current_fig = sorted_figures[i]
+        last_fig = current_group_figures[-1]
+
+        # Check if there's substantial text between the two figures
+        has_substantial_text = False
+        for para_idx in range(last_fig.para_idx + 1, current_fig.para_idx):
+            text = para_texts[para_idx] if para_idx < len(para_texts) else ""
+            # Substantial text = long text that's not a title/credit marker
+            if (text and
+                len(text) > config.max_title_len and
+                not is_credit_line(text) and
+                not is_title_paragraph(text) and
+                not is_source_paragraph(text)):
+                has_substantial_text = True
+                break
+
+        if has_substantial_text:
+            # Finalize current group and start a new one
+            reason = _build_group_reason(current_group_figures, reason_parts)
             groups.append(GroupCandidate(
-                figures=group_figures,
-                layout='row',
+                figures=current_group_figures,
+                layout='column',
                 reason=reason
             ))
-            used_figure_indices.update(i for i, _ in para_figs)
-    
-    # Phase 2: Adjacent-paragraph grouping (column layout)
-    remaining_figures = [(i, fig) for i, fig in enumerate(figures) if i not in used_figure_indices]
-    
-    i = 0
-    while i < len(remaining_figures):
-        current_idx, current_fig = remaining_figures[i]
-        group_figures = [current_fig]
-        group_indices = [current_idx]
-        reason_parts = [f"para={current_fig.para_idx}"]
-        
-        # Look ahead for adjacent figures
-        j = i + 1
-        while j < len(remaining_figures):
-            next_idx, next_fig = remaining_figures[j]
-            current_para = group_figures[-1].para_idx
-            next_para = next_fig.para_idx
-            
-            # Check gap between paragraphs
-            gap = next_para - current_para - 1
-            if gap > config.max_gap_paras:
-                break
-            
-            # Check if there's substantial text between images
-            has_substantial_text = False
-            for para_idx in range(current_para + 1, next_para):
-                text = para_texts[para_idx]
-                if text and len(text) > config.max_title_len and not is_credit_line(text):
-                    has_substantial_text = True
-                    break
-            
-            if has_substantial_text:
-                break
-            
-            # Determine if this should be row or column layout
-            layout = 'column'  # Default for adjacent paragraphs
-            if (current_fig.width_emu and next_fig.width_emu and 
-                (current_fig.width_emu + next_fig.width_emu) <= config.page_width_ratio * page_width_emu):
-                layout = 'row'  # Could be side-by-side despite being in different paras
-            
-            group_figures.append(next_fig)
-            group_indices.append(next_idx)
-            reason_parts.append(f"para={next_fig.para_idx}")
-            j += 1
-        
-        # Determine final layout for the group
-        if len(group_figures) > 1:
-            layout = 'row' if len(set(fig.para_idx for fig in group_figures)) == 1 else 'column'
-            reason = f"{layout} by adjacent-paragraphs({', '.join(reason_parts)}, gap≤{config.max_gap_paras})"
+            current_group_figures = [current_fig]
+            reason_parts = [f"para={current_fig.para_idx}"]
         else:
-            layout = 'column'  # Single figure
-            reason = f"single figure(para={current_fig.para_idx})"
-        
-        groups.append(GroupCandidate(
-            figures=group_figures,
-            layout=layout,
-            reason=reason
-        ))
-        
-        used_figure_indices.update(group_indices)
-        i = j if len(group_figures) > 1 else i + 1
-    
+            # Add to current group
+            current_group_figures.append(current_fig)
+            if current_fig.para_idx != last_fig.para_idx:
+                reason_parts.append(f"para={current_fig.para_idx}")
+
+    # Don't forget the last group
+    reason = _build_group_reason(current_group_figures, reason_parts)
+    groups.append(GroupCandidate(
+        figures=current_group_figures,
+        layout='column',
+        reason=reason
+    ))
+
     return groups
+
+
+def _build_group_reason(figures: List[FigureCandidate], reason_parts: List[str]) -> str:
+    """Build debug reason string for a group"""
+    if len(figures) == 1:
+        return f"single figure(para={figures[0].para_idx})"
+
+    # Check if all figures are in the same paragraph
+    unique_paras = set(f.para_idx for f in figures)
+    if len(unique_paras) == 1:
+        return f"same-paragraph(para={figures[0].para_idx}, {len(figures)} images)"
+
+    return f"continuous-region({', '.join(reason_parts)}, {len(figures)} images)"
 
 # --------- Phase 3: Assign Titles and Credits ----------
 def assign_titles_and_credits(groups: List[GroupCandidate], para_texts: List[str], config: Config, doc_full_title: str = None, converter=None):
